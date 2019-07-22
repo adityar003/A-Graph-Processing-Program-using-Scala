@@ -1,0 +1,779 @@
+myHadoop: Setting MH_IPOIB_TRANSFORM='s/\([^.]*\).*$/\1.ibnet/' from myhadoop.conf
+myHadoop: Setting MH_SCRATCH_DIR=/scratch/$USER/$SLURM_JOBID from myhadoop.conf
+myHadoop: Using HADOOP_HOME=/opt/hadoop/2.6.0
+myHadoop: Using MH_SCRATCH_DIR=/scratch/aravikum/22248476
+myHadoop: Using JAVA_HOME=/usr/java/latest
+myHadoop: Generating Hadoop configuration in directory in /home/aravikum/cometcluster...
+myHadoop: Backing up old config dir to /home/aravikum/cometcluster.10...
+`/home/aravikum/cometcluster' -> `/home/aravikum/cometcluster.10'
+myHadoop: Designating comet-11-55.ibnet as master node (namenode, secondary namenode, and jobtracker)
+myHadoop: The following nodes will be slaves (datanode, tasktracer):
+comet-11-55.ibnet
+comet-11-56.ibnet
+comet-11-61.ibnet
+19/03/30 21:27:41 INFO namenode.NameNode: STARTUP_MSG: 
+/************************************************************
+STARTUP_MSG: Starting NameNode
+STARTUP_MSG:   host = comet-11-55.sdsc.edu/198.202.116.190
+STARTUP_MSG:   args = [-format]
+STARTUP_MSG:   version = 2.6.0
+STARTUP_MSG:   classpath = /home/aravikum/cometcluster:/opt/hadoop/2.6.0/share/hadoop/common/lib/api-asn1-api-1.0.0-M20.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/stax-api-1.0-2.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/jaxb-impl-2.2.3-1.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/jersey-json-1.9.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/hamcrest-core-1.3.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/jsch-0.1.42.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/zookeeper-3.4.6.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/java-xmlbuilder-0.4.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/apacheds-i18n-2.0.0-M15.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/apacheds-kerberos-codec-2.0.0-M15.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/commons-beanutils-core-1.8.0.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/log4j-1.2.17.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/commons-collections-3.2.1.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/commons-codec-1.4.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/jets3t-0.9.0.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/jsr305-1.3.9.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/api-util-1.0.0-M20.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/junit-4.11.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/commons-logging-1.1.3.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/jackson-core-asl-1.9.13.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/slf4j-api-1.7.5.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/servlet-api-2.5.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/xmlenc-0.52.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/guava-11.0.2.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/curator-recipes-2.6.0.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/asm-3.2.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/commons-el-1.0.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/jackson-jaxrs-1.9.13.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/mockito-all-1.8.5.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/curator-client-2.6.0.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/protobuf-java-2.5.0.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/jasper-compiler-5.5.23.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/jettison-1.1.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/jetty-6.1.26.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/commons-beanutils-1.7.0.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/httpclient-4.2.5.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/xz-1.0.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/hadoop-auth-2.6.0.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/hadoop-annotations-2.6.0.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/commons-configuration-1.6.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/commons-digester-1.8.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/commons-cli-1.2.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/htrace-core-3.0.4.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/commons-httpclient-3.1.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/commons-io-2.4.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/jersey-server-1.9.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/snappy-java-1.0.4.1.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/jsp-api-2.1.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/netty-3.6.2.Final.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/activation-1.1.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/jasper-runtime-5.5.23.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/httpcore-4.2.5.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/slf4j-log4j12-1.7.5.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/jaxb-api-2.2.2.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/jackson-mapper-asl-1.9.13.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/jackson-xc-1.9.13.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/avro-1.7.4.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/jersey-core-1.9.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/jetty-util-6.1.26.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/commons-compress-1.4.1.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/gson-2.2.4.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/commons-net-3.1.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/commons-lang-2.6.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/commons-math3-3.1.1.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/paranamer-2.3.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/curator-framework-2.6.0.jar:/opt/hadoop/2.6.0/share/hadoop/common/hadoop-nfs-2.6.0.jar:/opt/hadoop/2.6.0/share/hadoop/common/hadoop-common-2.6.0.jar:/opt/hadoop/2.6.0/share/hadoop/common/hadoop-common-2.6.0-tests.jar:/opt/hadoop/2.6.0/share/hadoop/hdfs:/opt/hadoop/2.6.0/share/hadoop/hdfs/lib/commons-daemon-1.0.13.jar:/opt/hadoop/2.6.0/share/hadoop/hdfs/lib/log4j-1.2.17.jar:/opt/hadoop/2.6.0/share/hadoop/hdfs/lib/commons-codec-1.4.jar:/opt/hadoop/2.6.0/share/hadoop/hdfs/lib/jsr305-1.3.9.jar:/opt/hadoop/2.6.0/share/hadoop/hdfs/lib/commons-logging-1.1.3.jar:/opt/hadoop/2.6.0/share/hadoop/hdfs/lib/xercesImpl-2.9.1.jar:/opt/hadoop/2.6.0/share/hadoop/hdfs/lib/jackson-core-asl-1.9.13.jar:/opt/hadoop/2.6.0/share/hadoop/hdfs/lib/servlet-api-2.5.jar:/opt/hadoop/2.6.0/share/hadoop/hdfs/lib/xmlenc-0.52.jar:/opt/hadoop/2.6.0/share/hadoop/hdfs/lib/guava-11.0.2.jar:/opt/hadoop/2.6.0/share/hadoop/hdfs/lib/asm-3.2.jar:/opt/hadoop/2.6.0/share/hadoop/hdfs/lib/commons-el-1.0.jar:/opt/hadoop/2.6.0/share/hadoop/hdfs/lib/protobuf-java-2.5.0.jar:/opt/hadoop/2.6.0/share/hadoop/hdfs/lib/jetty-6.1.26.jar:/opt/hadoop/2.6.0/share/hadoop/hdfs/lib/commons-cli-1.2.jar:/opt/hadoop/2.6.0/share/hadoop/hdfs/lib/htrace-core-3.0.4.jar:/opt/hadoop/2.6.0/share/hadoop/hdfs/lib/commons-io-2.4.jar:/opt/hadoop/2.6.0/share/hadoop/hdfs/lib/jersey-server-1.9.jar:/opt/hadoop/2.6.0/share/hadoop/hdfs/lib/jsp-api-2.1.jar:/opt/hadoop/2.6.0/share/hadoop/hdfs/lib/netty-3.6.2.Final.jar:/opt/hadoop/2.6.0/share/hadoop/hdfs/lib/jasper-runtime-5.5.23.jar:/opt/hadoop/2.6.0/share/hadoop/hdfs/lib/jackson-mapper-asl-1.9.13.jar:/opt/hadoop/2.6.0/share/hadoop/hdfs/lib/jersey-core-1.9.jar:/opt/hadoop/2.6.0/share/hadoop/hdfs/lib/jetty-util-6.1.26.jar:/opt/hadoop/2.6.0/share/hadoop/hdfs/lib/commons-lang-2.6.jar:/opt/hadoop/2.6.0/share/hadoop/hdfs/lib/xml-apis-1.3.04.jar:/opt/hadoop/2.6.0/share/hadoop/hdfs/hadoop-hdfs-nfs-2.6.0.jar:/opt/hadoop/2.6.0/share/hadoop/hdfs/hadoop-hdfs-2.6.0-tests.jar:/opt/hadoop/2.6.0/share/hadoop/hdfs/hadoop-hdfs-2.6.0.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/stax-api-1.0-2.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/jaxb-impl-2.2.3-1.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/jersey-json-1.9.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/zookeeper-3.4.6.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/leveldbjni-all-1.8.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/jersey-client-1.9.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/log4j-1.2.17.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/commons-collections-3.2.1.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/commons-codec-1.4.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/jsr305-1.3.9.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/commons-logging-1.1.3.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/jackson-core-asl-1.9.13.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/servlet-api-2.5.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/guava-11.0.2.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/asm-3.2.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/jackson-jaxrs-1.9.13.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/protobuf-java-2.5.0.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/jettison-1.1.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/jetty-6.1.26.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/aopalliance-1.0.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/xz-1.0.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/commons-cli-1.2.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/javax.inject-1.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/commons-httpclient-3.1.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/commons-io-2.4.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/jersey-server-1.9.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/netty-3.6.2.Final.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/activation-1.1.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/jline-0.9.94.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/jaxb-api-2.2.2.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/jackson-mapper-asl-1.9.13.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/jackson-xc-1.9.13.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/guice-servlet-3.0.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/jersey-core-1.9.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/jetty-util-6.1.26.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/commons-compress-1.4.1.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/guice-3.0.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/commons-lang-2.6.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/jersey-guice-1.9.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/hadoop-yarn-server-tests-2.6.0.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/hadoop-yarn-common-2.6.0.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/hadoop-yarn-server-common-2.6.0.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/hadoop-yarn-server-resourcemanager-2.6.0.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/hadoop-yarn-api-2.6.0.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/hadoop-yarn-server-applicationhistoryservice-2.6.0.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/hadoop-yarn-applications-distributedshell-2.6.0.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/hadoop-yarn-applications-unmanaged-am-launcher-2.6.0.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/hadoop-yarn-client-2.6.0.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/hadoop-yarn-server-nodemanager-2.6.0.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/hadoop-yarn-registry-2.6.0.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/hadoop-yarn-server-web-proxy-2.6.0.jar:/opt/hadoop/2.6.0/share/hadoop/mapreduce/lib/hamcrest-core-1.3.jar:/opt/hadoop/2.6.0/share/hadoop/mapreduce/lib/leveldbjni-all-1.8.jar:/opt/hadoop/2.6.0/share/hadoop/mapreduce/lib/log4j-1.2.17.jar:/opt/hadoop/2.6.0/share/hadoop/mapreduce/lib/junit-4.11.jar:/opt/hadoop/2.6.0/share/hadoop/mapreduce/lib/jackson-core-asl-1.9.13.jar:/opt/hadoop/2.6.0/share/hadoop/mapreduce/lib/asm-3.2.jar:/opt/hadoop/2.6.0/share/hadoop/mapreduce/lib/protobuf-java-2.5.0.jar:/opt/hadoop/2.6.0/share/hadoop/mapreduce/lib/aopalliance-1.0.jar:/opt/hadoop/2.6.0/share/hadoop/mapreduce/lib/xz-1.0.jar:/opt/hadoop/2.6.0/share/hadoop/mapreduce/lib/hadoop-annotations-2.6.0.jar:/opt/hadoop/2.6.0/share/hadoop/mapreduce/lib/javax.inject-1.jar:/opt/hadoop/2.6.0/share/hadoop/mapreduce/lib/commons-io-2.4.jar:/opt/hadoop/2.6.0/share/hadoop/mapreduce/lib/jersey-server-1.9.jar:/opt/hadoop/2.6.0/share/hadoop/mapreduce/lib/snappy-java-1.0.4.1.jar:/opt/hadoop/2.6.0/share/hadoop/mapreduce/lib/netty-3.6.2.Final.jar:/opt/hadoop/2.6.0/share/hadoop/mapreduce/lib/jackson-mapper-asl-1.9.13.jar:/opt/hadoop/2.6.0/share/hadoop/mapreduce/lib/avro-1.7.4.jar:/opt/hadoop/2.6.0/share/hadoop/mapreduce/lib/guice-servlet-3.0.jar:/opt/hadoop/2.6.0/share/hadoop/mapreduce/lib/jersey-core-1.9.jar:/opt/hadoop/2.6.0/share/hadoop/mapreduce/lib/commons-compress-1.4.1.jar:/opt/hadoop/2.6.0/share/hadoop/mapreduce/lib/guice-3.0.jar:/opt/hadoop/2.6.0/share/hadoop/mapreduce/lib/jersey-guice-1.9.jar:/opt/hadoop/2.6.0/share/hadoop/mapreduce/lib/paranamer-2.3.jar:/opt/hadoop/2.6.0/share/hadoop/mapreduce/hadoop-mapreduce-client-shuffle-2.6.0.jar:/opt/hadoop/2.6.0/share/hadoop/mapreduce/hadoop-mapreduce-examples-2.6.0.jar:/opt/hadoop/2.6.0/share/hadoop/mapreduce/hadoop-mapreduce-client-common-2.6.0.jar:/opt/hadoop/2.6.0/share/hadoop/mapreduce/hadoop-mapreduce-client-hs-plugins-2.6.0.jar:/opt/hadoop/2.6.0/share/hadoop/mapreduce/hadoop-mapreduce-client-core-2.6.0.jar:/opt/hadoop/2.6.0/share/hadoop/mapreduce/hadoop-mapreduce-client-app-2.6.0.jar:/opt/hadoop/2.6.0/share/hadoop/mapreduce/hadoop-mapreduce-client-jobclient-2.6.0.jar:/opt/hadoop/2.6.0/share/hadoop/mapreduce/hadoop-mapreduce-client-hs-2.6.0.jar:/opt/hadoop/2.6.0/share/hadoop/mapreduce/hadoop-mapreduce-client-jobclient-2.6.0-tests.jar:/opt/hadoop/2.6.0/contrib/capacity-scheduler/*.jar
+STARTUP_MSG:   build = https://git-wip-us.apache.org/repos/asf/hadoop.git -r e3496499ecb8d220fba99dc5ed4c99c8f9e33bb1; compiled by 'jenkins' on 2014-11-13T21:10Z
+STARTUP_MSG:   java = 1.8.0_60
+************************************************************/
+19/03/30 21:27:41 INFO namenode.NameNode: registered UNIX signal handlers for [TERM, HUP, INT]
+19/03/30 21:27:41 INFO namenode.NameNode: createNameNode [-format]
+19/03/30 21:27:41 WARN util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+19/03/30 21:27:41 WARN common.Util: Path /scratch/aravikum/22248476/namenode_data should be specified as a URI in configuration files. Please update hdfs configuration.
+19/03/30 21:27:41 WARN common.Util: Path /scratch/aravikum/22248476/namenode_data should be specified as a URI in configuration files. Please update hdfs configuration.
+Formatting using clusterid: CID-6720579a-1a9f-435a-b0c5-19d9be405a43
+19/03/30 21:27:41 INFO namenode.FSNamesystem: No KeyProvider found.
+19/03/30 21:27:41 INFO namenode.FSNamesystem: fsLock is fair:true
+19/03/30 21:27:41 INFO blockmanagement.DatanodeManager: dfs.block.invalidate.limit=1000
+19/03/30 21:27:41 INFO blockmanagement.DatanodeManager: dfs.namenode.datanode.registration.ip-hostname-check=true
+19/03/30 21:27:41 INFO blockmanagement.BlockManager: dfs.namenode.startup.delay.block.deletion.sec is set to 000:00:00:00.000
+19/03/30 21:27:41 INFO blockmanagement.BlockManager: The block deletion will start around 2019 Mar 30 21:27:41
+19/03/30 21:27:41 INFO util.GSet: Computing capacity for map BlocksMap
+19/03/30 21:27:41 INFO util.GSet: VM type       = 64-bit
+19/03/30 21:27:41 INFO util.GSet: 2.0% max memory 958.5 MB = 19.2 MB
+19/03/30 21:27:41 INFO util.GSet: capacity      = 2^21 = 2097152 entries
+19/03/30 21:27:41 INFO blockmanagement.BlockManager: dfs.block.access.token.enable=false
+19/03/30 21:27:41 INFO blockmanagement.BlockManager: defaultReplication         = 3
+19/03/30 21:27:41 INFO blockmanagement.BlockManager: maxReplication             = 512
+19/03/30 21:27:41 INFO blockmanagement.BlockManager: minReplication             = 1
+19/03/30 21:27:41 INFO blockmanagement.BlockManager: maxReplicationStreams      = 2
+19/03/30 21:27:41 INFO blockmanagement.BlockManager: shouldCheckForEnoughRacks  = false
+19/03/30 21:27:41 INFO blockmanagement.BlockManager: replicationRecheckInterval = 3000
+19/03/30 21:27:41 INFO blockmanagement.BlockManager: encryptDataTransfer        = false
+19/03/30 21:27:41 INFO blockmanagement.BlockManager: maxNumBlocksToLog          = 1000
+19/03/30 21:27:41 INFO namenode.FSNamesystem: fsOwner             = aravikum (auth:SIMPLE)
+19/03/30 21:27:41 INFO namenode.FSNamesystem: supergroup          = supergroup
+19/03/30 21:27:41 INFO namenode.FSNamesystem: isPermissionEnabled = true
+19/03/30 21:27:41 INFO namenode.FSNamesystem: HA Enabled: false
+19/03/30 21:27:41 INFO namenode.FSNamesystem: Append Enabled: true
+19/03/30 21:27:41 INFO util.GSet: Computing capacity for map INodeMap
+19/03/30 21:27:41 INFO util.GSet: VM type       = 64-bit
+19/03/30 21:27:41 INFO util.GSet: 1.0% max memory 958.5 MB = 9.6 MB
+19/03/30 21:27:41 INFO util.GSet: capacity      = 2^20 = 1048576 entries
+19/03/30 21:27:41 INFO namenode.NameNode: Caching file names occuring more than 10 times
+19/03/30 21:27:41 INFO util.GSet: Computing capacity for map cachedBlocks
+19/03/30 21:27:41 INFO util.GSet: VM type       = 64-bit
+19/03/30 21:27:41 INFO util.GSet: 0.25% max memory 958.5 MB = 2.4 MB
+19/03/30 21:27:41 INFO util.GSet: capacity      = 2^18 = 262144 entries
+19/03/30 21:27:41 INFO namenode.FSNamesystem: dfs.namenode.safemode.threshold-pct = 0.9990000128746033
+19/03/30 21:27:41 INFO namenode.FSNamesystem: dfs.namenode.safemode.min.datanodes = 0
+19/03/30 21:27:41 INFO namenode.FSNamesystem: dfs.namenode.safemode.extension     = 30000
+19/03/30 21:27:41 INFO namenode.FSNamesystem: Retry cache on namenode is enabled
+19/03/30 21:27:41 INFO namenode.FSNamesystem: Retry cache will use 0.03 of total heap and retry cache entry expiry time is 600000 millis
+19/03/30 21:27:41 INFO util.GSet: Computing capacity for map NameNodeRetryCache
+19/03/30 21:27:41 INFO util.GSet: VM type       = 64-bit
+19/03/30 21:27:41 INFO util.GSet: 0.029999999329447746% max memory 958.5 MB = 294.5 KB
+19/03/30 21:27:41 INFO util.GSet: capacity      = 2^15 = 32768 entries
+19/03/30 21:27:41 INFO namenode.NNConf: ACLs enabled? false
+19/03/30 21:27:41 INFO namenode.NNConf: XAttrs enabled? true
+19/03/30 21:27:41 INFO namenode.NNConf: Maximum size of an xattr: 16384
+19/03/30 21:27:41 INFO namenode.FSImage: Allocated new BlockPoolId: BP-652142400-198.202.116.190-1554006461887
+19/03/30 21:27:41 INFO common.Storage: Storage directory /scratch/aravikum/22248476/namenode_data has been successfully formatted.
+19/03/30 21:27:41 INFO namenode.NNStorageRetentionManager: Going to retain 1 images with txid >= 0
+19/03/30 21:27:41 INFO util.ExitUtil: Exiting with status 0
+19/03/30 21:27:41 INFO namenode.NameNode: SHUTDOWN_MSG: 
+/************************************************************
+SHUTDOWN_MSG: Shutting down NameNode at comet-11-55.sdsc.edu/198.202.116.190
+************************************************************/
+myHadoop:  
+myHadoop: Enabling experimental Spark support
+myHadoop: Using SPARK_CONF_DIR=/home/aravikum/cometcluster/spark
+myHadoop:  
+To use Spark, you will want to type the following commands:"
+  source /home/aravikum/cometcluster/spark/spark-env.sh
+  myspark start
+19/03/30 21:27:42 WARN util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+Starting namenodes on [comet-11-55.ibnet]
+comet-11-55.ibnet: starting namenode, logging to /scratch/aravikum/22248476/logs/hadoop-aravikum-namenode-comet-11-55.sdsc.edu.out
+comet-11-55.ibnet: starting datanode, logging to /scratch/aravikum/22248476/logs/hadoop-aravikum-datanode-comet-11-55.sdsc.edu.out
+comet-11-56.ibnet: starting datanode, logging to /scratch/aravikum/22248476/logs/hadoop-aravikum-datanode-comet-11-56.sdsc.edu.out
+comet-11-61.ibnet: starting datanode, logging to /scratch/aravikum/22248476/logs/hadoop-aravikum-datanode-comet-11-61.sdsc.edu.out
+Starting secondary namenodes [comet-11-55.ibnet]
+comet-11-55.ibnet: starting secondarynamenode, logging to /scratch/aravikum/22248476/logs/hadoop-aravikum-secondarynamenode-comet-11-55.sdsc.edu.out
+19/03/30 21:27:57 WARN util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+starting yarn daemons
+starting resourcemanager, logging to /scratch/aravikum/22248476/logs/yarn-aravikum-resourcemanager-comet-11-55.out
+comet-11-56.ibnet: starting nodemanager, logging to /scratch/aravikum/22248476/logs/yarn-aravikum-nodemanager-comet-11-56.sdsc.edu.out
+comet-11-61.ibnet: starting nodemanager, logging to /scratch/aravikum/22248476/logs/yarn-aravikum-nodemanager-comet-11-61.sdsc.edu.out
+comet-11-55.ibnet: starting nodemanager, logging to /scratch/aravikum/22248476/logs/yarn-aravikum-nodemanager-comet-11-55.sdsc.edu.out
+mySpark: Using /home/aravikum/cometcluster/spark/slaves as our slaves file
+mySpark: Reading in /home/aravikum/cometcluster/spark/spark-env.sh as our slaves file
+starting org.apache.spark.deploy.master.Master, logging to /scratch/aravikum/22248476/logs/spark-aravikum-org.apache.spark.deploy.master.Master-1-comet-11-55.out
+mySpark: Starting worker on comet-11-55.ibnet:
+  /opt/spark/1.5.2/sbin/spark-daemon.sh --config /home/aravikum/cometcluster/spark start org.apache.spark.deploy.worker.Worker 1 spark://comet-11-55.ibnet:7077
+starting org.apache.spark.deploy.worker.Worker, logging to /scratch/aravikum/22248476/logs/spark-aravikum-org.apache.spark.deploy.worker.Worker-1-comet-11-55.sdsc.edu.out
+mySpark: Starting worker on comet-11-56.ibnet:
+  /opt/spark/1.5.2/sbin/spark-daemon.sh --config /home/aravikum/cometcluster/spark start org.apache.spark.deploy.worker.Worker 1 spark://comet-11-55.ibnet:7077
+starting org.apache.spark.deploy.worker.Worker, logging to /scratch/aravikum/22248476/logs/spark-aravikum-org.apache.spark.deploy.worker.Worker-1-comet-11-56.sdsc.edu.out
+mySpark: Starting worker on comet-11-61.ibnet:
+  /opt/spark/1.5.2/sbin/spark-daemon.sh --config /home/aravikum/cometcluster/spark start org.apache.spark.deploy.worker.Worker 1 spark://comet-11-55.ibnet:7077
+starting org.apache.spark.deploy.worker.Worker, logging to /scratch/aravikum/22248476/logs/spark-aravikum-org.apache.spark.deploy.worker.Worker-1-comet-11-61.sdsc.edu.out
+19/03/30 21:28:10 WARN util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+19/03/30 21:28:11 WARN util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+19/03/30 21:28:13 INFO spark.SparkContext: Running Spark version 1.5.2
+19/03/30 21:28:13 WARN util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+19/03/30 21:28:13 INFO spark.SecurityManager: Changing view acls to: aravikum
+19/03/30 21:28:13 INFO spark.SecurityManager: Changing modify acls to: aravikum
+19/03/30 21:28:13 INFO spark.SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users with view permissions: Set(aravikum); users with modify permissions: Set(aravikum)
+19/03/30 21:28:14 INFO slf4j.Slf4jLogger: Slf4jLogger started
+19/03/30 21:28:14 INFO Remoting: Starting remoting
+19/03/30 21:28:14 INFO Remoting: Remoting started; listening on addresses :[akka.tcp://sparkDriver@10.22.253.64:39826]
+19/03/30 21:28:14 INFO util.Utils: Successfully started service 'sparkDriver' on port 39826.
+19/03/30 21:28:14 INFO spark.SparkEnv: Registering MapOutputTracker
+19/03/30 21:28:14 INFO spark.SparkEnv: Registering BlockManagerMaster
+19/03/30 21:28:14 INFO storage.DiskBlockManager: Created local directory at /tmp/blockmgr-9de296e4-dd81-48ab-a576-a1fac40dc601
+19/03/30 21:28:14 INFO storage.MemoryStore: MemoryStore started with capacity 530.0 MB
+19/03/30 21:28:14 INFO spark.HttpFileServer: HTTP File server directory is /tmp/spark-ccb91107-2273-419e-abb1-2cca45ce386d/httpd-64cc0eb8-9584-4e87-8eb9-eee49d54a237
+19/03/30 21:28:14 INFO spark.HttpServer: Starting HTTP Server
+19/03/30 21:28:14 INFO server.Server: jetty-8.y.z-SNAPSHOT
+19/03/30 21:28:14 INFO server.AbstractConnector: Started SocketConnector@0.0.0.0:38445
+19/03/30 21:28:14 INFO util.Utils: Successfully started service 'HTTP file server' on port 38445.
+19/03/30 21:28:14 INFO spark.SparkEnv: Registering OutputCommitCoordinator
+19/03/30 21:28:14 INFO server.Server: jetty-8.y.z-SNAPSHOT
+19/03/30 21:28:14 INFO server.AbstractConnector: Started SelectChannelConnector@0.0.0.0:4040
+19/03/30 21:28:14 INFO util.Utils: Successfully started service 'SparkUI' on port 4040.
+19/03/30 21:28:14 INFO ui.SparkUI: Started SparkUI at http://10.22.253.64:4040
+19/03/30 21:28:14 INFO spark.SparkContext: Added JAR file:/home/aravikum/project5/graph.jar at http://10.22.253.64:38445/jars/graph.jar with timestamp 1554006494712
+19/03/30 21:28:14 WARN metrics.MetricsSystem: Using default name DAGScheduler for source because spark.app.id is not set.
+19/03/30 21:28:14 INFO client.AppClient$ClientEndpoint: Connecting to master spark://comet-11-55.ibnet:7077...
+19/03/30 21:28:14 INFO cluster.SparkDeploySchedulerBackend: Connected to Spark cluster with app ID app-20190330212814-0000
+19/03/30 21:28:14 INFO client.AppClient$ClientEndpoint: Executor added: app-20190330212814-0000/0 on worker-20190330212809-10.22.253.58-35876 (10.22.253.58:35876) with 24 cores
+19/03/30 21:28:14 INFO cluster.SparkDeploySchedulerBackend: Granted executor ID app-20190330212814-0000/0 on hostPort 10.22.253.58:35876 with 24 cores, 1024.0 MB RAM
+19/03/30 21:28:14 INFO client.AppClient$ClientEndpoint: Executor added: app-20190330212814-0000/1 on worker-20190330212806-10.22.253.63-33857 (10.22.253.63:33857) with 24 cores
+19/03/30 21:28:14 INFO cluster.SparkDeploySchedulerBackend: Granted executor ID app-20190330212814-0000/1 on hostPort 10.22.253.63:33857 with 24 cores, 1024.0 MB RAM
+19/03/30 21:28:14 INFO client.AppClient$ClientEndpoint: Executor added: app-20190330212814-0000/2 on worker-20190330212804-10.22.253.64-34616 (10.22.253.64:34616) with 24 cores
+19/03/30 21:28:14 INFO cluster.SparkDeploySchedulerBackend: Granted executor ID app-20190330212814-0000/2 on hostPort 10.22.253.64:34616 with 24 cores, 1024.0 MB RAM
+19/03/30 21:28:14 INFO client.AppClient$ClientEndpoint: Executor updated: app-20190330212814-0000/0 is now LOADING
+19/03/30 21:28:14 INFO util.Utils: Successfully started service 'org.apache.spark.network.netty.NettyBlockTransferService' on port 44430.
+19/03/30 21:28:15 INFO netty.NettyBlockTransferService: Server created on 44430
+19/03/30 21:28:15 INFO storage.BlockManagerMaster: Trying to register BlockManager
+19/03/30 21:28:15 INFO client.AppClient$ClientEndpoint: Executor updated: app-20190330212814-0000/0 is now RUNNING
+19/03/30 21:28:15 INFO storage.BlockManagerMasterEndpoint: Registering block manager 10.22.253.64:44430 with 530.0 MB RAM, BlockManagerId(driver, 10.22.253.64, 44430)
+19/03/30 21:28:15 INFO client.AppClient$ClientEndpoint: Executor updated: app-20190330212814-0000/2 is now LOADING
+19/03/30 21:28:15 INFO storage.BlockManagerMaster: Registered BlockManager
+19/03/30 21:28:15 INFO client.AppClient$ClientEndpoint: Executor updated: app-20190330212814-0000/1 is now LOADING
+19/03/30 21:28:15 INFO client.AppClient$ClientEndpoint: Executor updated: app-20190330212814-0000/1 is now RUNNING
+19/03/30 21:28:15 INFO client.AppClient$ClientEndpoint: Executor updated: app-20190330212814-0000/2 is now RUNNING
+19/03/30 21:28:15 INFO cluster.SparkDeploySchedulerBackend: SchedulerBackend is ready for scheduling beginning after reached minRegisteredResourcesRatio: 0.0
+19/03/30 21:28:15 INFO storage.MemoryStore: ensureFreeSpace(120176) called with curMem=0, maxMem=555755765
+19/03/30 21:28:15 INFO storage.MemoryStore: Block broadcast_0 stored as values in memory (estimated size 117.4 KB, free 529.9 MB)
+19/03/30 21:28:15 INFO storage.MemoryStore: ensureFreeSpace(12863) called with curMem=120176, maxMem=555755765
+19/03/30 21:28:15 INFO storage.MemoryStore: Block broadcast_0_piece0 stored as bytes in memory (estimated size 12.6 KB, free 529.9 MB)
+19/03/30 21:28:15 INFO storage.BlockManagerInfo: Added broadcast_0_piece0 in memory on 10.22.253.64:44430 (size: 12.6 KB, free: 530.0 MB)
+19/03/30 21:28:15 INFO spark.SparkContext: Created broadcast 0 from textFile at Graph.scala:26
+19/03/30 21:28:15 INFO mapred.FileInputFormat: Total input paths to process : 1
+19/03/30 21:28:15 INFO spark.SparkContext: Starting job: foreach at Graph.scala:32
+19/03/30 21:28:15 INFO scheduler.DAGScheduler: Got job 0 (foreach at Graph.scala:32) with 2 output partitions
+19/03/30 21:28:15 INFO scheduler.DAGScheduler: Final stage: ResultStage 0(foreach at Graph.scala:32)
+19/03/30 21:28:15 INFO scheduler.DAGScheduler: Parents of final stage: List()
+19/03/30 21:28:15 INFO scheduler.DAGScheduler: Missing parents: List()
+19/03/30 21:28:15 INFO scheduler.DAGScheduler: Submitting ResultStage 0 (MapPartitionsRDD[3] at map at Graph.scala:30), which has no missing parents
+19/03/30 21:28:15 INFO storage.MemoryStore: ensureFreeSpace(3312) called with curMem=133039, maxMem=555755765
+19/03/30 21:28:15 INFO storage.MemoryStore: Block broadcast_1 stored as values in memory (estimated size 3.2 KB, free 529.9 MB)
+19/03/30 21:28:15 INFO storage.MemoryStore: ensureFreeSpace(1936) called with curMem=136351, maxMem=555755765
+19/03/30 21:28:15 INFO storage.MemoryStore: Block broadcast_1_piece0 stored as bytes in memory (estimated size 1936.0 B, free 529.9 MB)
+19/03/30 21:28:15 INFO storage.BlockManagerInfo: Added broadcast_1_piece0 in memory on 10.22.253.64:44430 (size: 1936.0 B, free: 530.0 MB)
+19/03/30 21:28:15 INFO spark.SparkContext: Created broadcast 1 from broadcast at DAGScheduler.scala:861
+19/03/30 21:28:15 INFO scheduler.DAGScheduler: Submitting 2 missing tasks from ResultStage 0 (MapPartitionsRDD[3] at map at Graph.scala:30)
+19/03/30 21:28:15 INFO scheduler.TaskSchedulerImpl: Adding task set 0.0 with 2 tasks
+19/03/30 21:28:16 INFO cluster.SparkDeploySchedulerBackend: Registered executor: AkkaRpcEndpointRef(Actor[akka.tcp://sparkExecutor@10.22.253.64:33947/user/Executor#-1616477867]) with ID 2
+19/03/30 21:28:16 INFO scheduler.TaskSetManager: Starting task 0.0 in stage 0.0 (TID 0, 10.22.253.64, ANY, 2219 bytes)
+19/03/30 21:28:16 INFO scheduler.TaskSetManager: Starting task 1.0 in stage 0.0 (TID 1, 10.22.253.64, ANY, 2219 bytes)
+19/03/30 21:28:16 INFO cluster.SparkDeploySchedulerBackend: Registered executor: AkkaRpcEndpointRef(Actor[akka.tcp://sparkExecutor@10.22.253.58:46087/user/Executor#-895943702]) with ID 0
+19/03/30 21:28:16 INFO cluster.SparkDeploySchedulerBackend: Registered executor: AkkaRpcEndpointRef(Actor[akka.tcp://sparkExecutor@10.22.253.63:39910/user/Executor#-873728197]) with ID 1
+19/03/30 21:28:16 INFO storage.BlockManagerMasterEndpoint: Registering block manager 10.22.253.64:33610 with 530.0 MB RAM, BlockManagerId(2, 10.22.253.64, 33610)
+19/03/30 21:28:16 INFO storage.BlockManagerMasterEndpoint: Registering block manager 10.22.253.58:44606 with 530.0 MB RAM, BlockManagerId(0, 10.22.253.58, 44606)
+19/03/30 21:28:16 INFO storage.BlockManagerMasterEndpoint: Registering block manager 10.22.253.63:33797 with 530.0 MB RAM, BlockManagerId(1, 10.22.253.63, 33797)
+19/03/30 21:28:16 INFO storage.BlockManagerInfo: Added broadcast_1_piece0 in memory on 10.22.253.64:33610 (size: 1936.0 B, free: 530.0 MB)
+19/03/30 21:28:17 INFO storage.BlockManagerInfo: Added broadcast_0_piece0 in memory on 10.22.253.64:33610 (size: 12.6 KB, free: 530.0 MB)
+19/03/30 21:28:18 INFO scheduler.TaskSetManager: Finished task 0.0 in stage 0.0 (TID 0) in 1858 ms on 10.22.253.64 (1/2)
+19/03/30 21:28:18 INFO scheduler.TaskSetManager: Finished task 1.0 in stage 0.0 (TID 1) in 1846 ms on 10.22.253.64 (2/2)
+19/03/30 21:28:18 INFO scheduler.TaskSchedulerImpl: Removed TaskSet 0.0, whose tasks have all completed, from pool 
+19/03/30 21:28:18 INFO scheduler.DAGScheduler: ResultStage 0 (foreach at Graph.scala:32) finished in 2.512 s
+19/03/30 21:28:18 INFO scheduler.DAGScheduler: Job 0 finished: foreach at Graph.scala:32, took 2.568132 s
+19/03/30 21:28:18 INFO spark.SparkContext: Starting job: collect at Graph.scala:44
+19/03/30 21:28:18 INFO scheduler.DAGScheduler: Registering RDD 4 (flatMap at Graph.scala:36)
+19/03/30 21:28:18 INFO scheduler.DAGScheduler: Registering RDD 3 (map at Graph.scala:30)
+19/03/30 21:28:18 INFO scheduler.DAGScheduler: Registering RDD 10 (flatMap at Graph.scala:36)
+19/03/30 21:28:18 INFO scheduler.DAGScheduler: Registering RDD 3 (map at Graph.scala:30)
+19/03/30 21:28:18 INFO scheduler.DAGScheduler: Registering RDD 16 (flatMap at Graph.scala:36)
+19/03/30 21:28:18 INFO scheduler.DAGScheduler: Registering RDD 3 (map at Graph.scala:30)
+19/03/30 21:28:18 INFO scheduler.DAGScheduler: Registering RDD 22 (flatMap at Graph.scala:36)
+19/03/30 21:28:18 INFO scheduler.DAGScheduler: Registering RDD 3 (map at Graph.scala:30)
+19/03/30 21:28:18 INFO scheduler.DAGScheduler: Registering RDD 28 (flatMap at Graph.scala:36)
+19/03/30 21:28:18 INFO scheduler.DAGScheduler: Registering RDD 3 (map at Graph.scala:30)
+19/03/30 21:28:18 INFO scheduler.DAGScheduler: Registering RDD 34 (map at Graph.scala:42)
+19/03/30 21:28:18 INFO scheduler.DAGScheduler: Got job 1 (collect at Graph.scala:44) with 2 output partitions
+19/03/30 21:28:18 INFO scheduler.DAGScheduler: Final stage: ResultStage 12(collect at Graph.scala:44)
+19/03/30 21:28:18 INFO scheduler.DAGScheduler: Parents of final stage: List(ShuffleMapStage 11)
+19/03/30 21:28:18 INFO scheduler.DAGScheduler: Missing parents: List(ShuffleMapStage 11)
+19/03/30 21:28:18 INFO scheduler.DAGScheduler: Submitting ShuffleMapStage 1 (MapPartitionsRDD[4] at flatMap at Graph.scala:36), which has no missing parents
+19/03/30 21:28:18 INFO storage.MemoryStore: ensureFreeSpace(4128) called with curMem=138287, maxMem=555755765
+19/03/30 21:28:18 INFO storage.MemoryStore: Block broadcast_2 stored as values in memory (estimated size 4.0 KB, free 529.9 MB)
+19/03/30 21:28:18 INFO storage.MemoryStore: ensureFreeSpace(2340) called with curMem=142415, maxMem=555755765
+19/03/30 21:28:18 INFO storage.MemoryStore: Block broadcast_2_piece0 stored as bytes in memory (estimated size 2.3 KB, free 529.9 MB)
+19/03/30 21:28:18 INFO storage.BlockManagerInfo: Added broadcast_2_piece0 in memory on 10.22.253.64:44430 (size: 2.3 KB, free: 530.0 MB)
+19/03/30 21:28:18 INFO spark.SparkContext: Created broadcast 2 from broadcast at DAGScheduler.scala:861
+19/03/30 21:28:18 INFO scheduler.DAGScheduler: Submitting 2 missing tasks from ShuffleMapStage 1 (MapPartitionsRDD[4] at flatMap at Graph.scala:36)
+19/03/30 21:28:18 INFO scheduler.TaskSchedulerImpl: Adding task set 1.0 with 2 tasks
+19/03/30 21:28:18 INFO scheduler.DAGScheduler: Submitting ShuffleMapStage 2 (MapPartitionsRDD[3] at map at Graph.scala:30), which has no missing parents
+19/03/30 21:28:18 INFO storage.MemoryStore: ensureFreeSpace(3704) called with curMem=144755, maxMem=555755765
+19/03/30 21:28:18 INFO scheduler.TaskSetManager: Starting task 0.0 in stage 1.0 (TID 2, 10.22.253.58, ANY, 2208 bytes)
+19/03/30 21:28:18 INFO storage.MemoryStore: Block broadcast_3 stored as values in memory (estimated size 3.6 KB, free 529.9 MB)
+19/03/30 21:28:18 INFO scheduler.TaskSetManager: Starting task 1.0 in stage 1.0 (TID 3, 10.22.253.64, ANY, 2208 bytes)
+19/03/30 21:28:18 INFO storage.MemoryStore: ensureFreeSpace(2163) called with curMem=148459, maxMem=555755765
+19/03/30 21:28:18 INFO storage.MemoryStore: Block broadcast_3_piece0 stored as bytes in memory (estimated size 2.1 KB, free 529.9 MB)
+19/03/30 21:28:18 INFO storage.BlockManagerInfo: Added broadcast_3_piece0 in memory on 10.22.253.64:44430 (size: 2.1 KB, free: 530.0 MB)
+19/03/30 21:28:18 INFO spark.SparkContext: Created broadcast 3 from broadcast at DAGScheduler.scala:861
+19/03/30 21:28:18 INFO scheduler.DAGScheduler: Submitting 2 missing tasks from ShuffleMapStage 2 (MapPartitionsRDD[3] at map at Graph.scala:30)
+19/03/30 21:28:18 INFO scheduler.TaskSchedulerImpl: Adding task set 2.0 with 2 tasks
+19/03/30 21:28:18 INFO scheduler.DAGScheduler: Submitting ShuffleMapStage 4 (MapPartitionsRDD[3] at map at Graph.scala:30), which has no missing parents
+19/03/30 21:28:18 INFO scheduler.TaskSetManager: Starting task 0.0 in stage 2.0 (TID 4, 10.22.253.64, ANY, 2208 bytes)
+19/03/30 21:28:18 INFO storage.MemoryStore: ensureFreeSpace(3704) called with curMem=150622, maxMem=555755765
+19/03/30 21:28:18 INFO scheduler.TaskSetManager: Starting task 1.0 in stage 2.0 (TID 5, 10.22.253.63, ANY, 2208 bytes)
+19/03/30 21:28:18 INFO storage.MemoryStore: Block broadcast_4 stored as values in memory (estimated size 3.6 KB, free 529.9 MB)
+19/03/30 21:28:18 INFO storage.MemoryStore: ensureFreeSpace(2164) called with curMem=154326, maxMem=555755765
+19/03/30 21:28:18 INFO storage.MemoryStore: Block broadcast_4_piece0 stored as bytes in memory (estimated size 2.1 KB, free 529.9 MB)
+19/03/30 21:28:18 INFO storage.BlockManagerInfo: Added broadcast_4_piece0 in memory on 10.22.253.64:44430 (size: 2.1 KB, free: 530.0 MB)
+19/03/30 21:28:18 INFO spark.SparkContext: Created broadcast 4 from broadcast at DAGScheduler.scala:861
+19/03/30 21:28:18 INFO scheduler.DAGScheduler: Submitting 2 missing tasks from ShuffleMapStage 4 (MapPartitionsRDD[3] at map at Graph.scala:30)
+19/03/30 21:28:18 INFO scheduler.TaskSchedulerImpl: Adding task set 4.0 with 2 tasks
+19/03/30 21:28:18 INFO scheduler.DAGScheduler: Submitting ShuffleMapStage 6 (MapPartitionsRDD[3] at map at Graph.scala:30), which has no missing parents
+19/03/30 21:28:18 INFO scheduler.TaskSetManager: Starting task 0.0 in stage 4.0 (TID 6, 10.22.253.64, ANY, 2208 bytes)
+19/03/30 21:28:18 INFO scheduler.TaskSetManager: Starting task 1.0 in stage 4.0 (TID 7, 10.22.253.63, ANY, 2208 bytes)
+19/03/30 21:28:18 INFO storage.MemoryStore: ensureFreeSpace(3704) called with curMem=156490, maxMem=555755765
+19/03/30 21:28:18 INFO storage.MemoryStore: Block broadcast_5 stored as values in memory (estimated size 3.6 KB, free 529.9 MB)
+19/03/30 21:28:18 INFO storage.MemoryStore: ensureFreeSpace(2164) called with curMem=160194, maxMem=555755765
+19/03/30 21:28:18 INFO storage.MemoryStore: Block broadcast_5_piece0 stored as bytes in memory (estimated size 2.1 KB, free 529.9 MB)
+19/03/30 21:28:18 INFO storage.BlockManagerInfo: Added broadcast_5_piece0 in memory on 10.22.253.64:44430 (size: 2.1 KB, free: 530.0 MB)
+19/03/30 21:28:18 INFO spark.SparkContext: Created broadcast 5 from broadcast at DAGScheduler.scala:861
+19/03/30 21:28:18 INFO scheduler.DAGScheduler: Submitting 2 missing tasks from ShuffleMapStage 6 (MapPartitionsRDD[3] at map at Graph.scala:30)
+19/03/30 21:28:18 INFO scheduler.TaskSchedulerImpl: Adding task set 6.0 with 2 tasks
+19/03/30 21:28:18 INFO scheduler.DAGScheduler: Submitting ShuffleMapStage 8 (MapPartitionsRDD[3] at map at Graph.scala:30), which has no missing parents
+19/03/30 21:28:18 INFO storage.BlockManagerInfo: Added broadcast_2_piece0 in memory on 10.22.253.64:33610 (size: 2.3 KB, free: 530.0 MB)
+19/03/30 21:28:18 INFO scheduler.TaskSetManager: Starting task 0.0 in stage 6.0 (TID 8, 10.22.253.63, ANY, 2208 bytes)
+19/03/30 21:28:18 INFO storage.MemoryStore: ensureFreeSpace(3704) called with curMem=162358, maxMem=555755765
+19/03/30 21:28:18 INFO scheduler.TaskSetManager: Starting task 1.0 in stage 6.0 (TID 9, 10.22.253.64, ANY, 2208 bytes)
+19/03/30 21:28:18 INFO storage.MemoryStore: Block broadcast_6 stored as values in memory (estimated size 3.6 KB, free 529.9 MB)
+19/03/30 21:28:18 INFO storage.MemoryStore: ensureFreeSpace(2165) called with curMem=166062, maxMem=555755765
+19/03/30 21:28:18 INFO storage.MemoryStore: Block broadcast_6_piece0 stored as bytes in memory (estimated size 2.1 KB, free 529.8 MB)
+19/03/30 21:28:18 INFO storage.BlockManagerInfo: Added broadcast_6_piece0 in memory on 10.22.253.64:44430 (size: 2.1 KB, free: 530.0 MB)
+19/03/30 21:28:18 INFO spark.SparkContext: Created broadcast 6 from broadcast at DAGScheduler.scala:861
+19/03/30 21:28:18 INFO scheduler.DAGScheduler: Submitting 2 missing tasks from ShuffleMapStage 8 (MapPartitionsRDD[3] at map at Graph.scala:30)
+19/03/30 21:28:18 INFO scheduler.TaskSchedulerImpl: Adding task set 8.0 with 2 tasks
+19/03/30 21:28:18 INFO scheduler.DAGScheduler: Submitting ShuffleMapStage 10 (MapPartitionsRDD[3] at map at Graph.scala:30), which has no missing parents
+19/03/30 21:28:18 INFO scheduler.TaskSetManager: Starting task 0.0 in stage 8.0 (TID 10, 10.22.253.58, ANY, 2208 bytes)
+19/03/30 21:28:18 INFO storage.MemoryStore: ensureFreeSpace(3704) called with curMem=168227, maxMem=555755765
+19/03/30 21:28:18 INFO scheduler.TaskSetManager: Starting task 1.0 in stage 8.0 (TID 11, 10.22.253.63, ANY, 2208 bytes)
+19/03/30 21:28:18 INFO storage.MemoryStore: Block broadcast_7 stored as values in memory (estimated size 3.6 KB, free 529.8 MB)
+19/03/30 21:28:18 INFO storage.MemoryStore: ensureFreeSpace(2165) called with curMem=171931, maxMem=555755765
+19/03/30 21:28:18 INFO storage.MemoryStore: Block broadcast_7_piece0 stored as bytes in memory (estimated size 2.1 KB, free 529.8 MB)
+19/03/30 21:28:18 INFO storage.BlockManagerInfo: Added broadcast_7_piece0 in memory on 10.22.253.64:44430 (size: 2.1 KB, free: 530.0 MB)
+19/03/30 21:28:18 INFO spark.SparkContext: Created broadcast 7 from broadcast at DAGScheduler.scala:861
+19/03/30 21:28:18 INFO scheduler.DAGScheduler: Submitting 2 missing tasks from ShuffleMapStage 10 (MapPartitionsRDD[3] at map at Graph.scala:30)
+19/03/30 21:28:18 INFO scheduler.TaskSchedulerImpl: Adding task set 10.0 with 2 tasks
+19/03/30 21:28:18 INFO scheduler.TaskSetManager: Starting task 0.0 in stage 10.0 (TID 12, 10.22.253.64, ANY, 2208 bytes)
+19/03/30 21:28:18 INFO scheduler.TaskSetManager: Starting task 1.0 in stage 10.0 (TID 13, 10.22.253.63, ANY, 2208 bytes)
+19/03/30 21:28:18 INFO storage.BlockManagerInfo: Added broadcast_4_piece0 in memory on 10.22.253.64:33610 (size: 2.1 KB, free: 530.0 MB)
+19/03/30 21:28:18 INFO storage.BlockManagerInfo: Added broadcast_3_piece0 in memory on 10.22.253.64:33610 (size: 2.1 KB, free: 530.0 MB)
+19/03/30 21:28:18 INFO storage.BlockManagerInfo: Added broadcast_7_piece0 in memory on 10.22.253.64:33610 (size: 2.1 KB, free: 530.0 MB)
+19/03/30 21:28:18 INFO storage.BlockManagerInfo: Added broadcast_5_piece0 in memory on 10.22.253.64:33610 (size: 2.1 KB, free: 530.0 MB)
+19/03/30 21:28:18 INFO storage.BlockManagerInfo: Added broadcast_2_piece0 in memory on 10.22.253.58:44606 (size: 2.3 KB, free: 530.0 MB)
+19/03/30 21:28:18 INFO storage.BlockManagerInfo: Added broadcast_7_piece0 in memory on 10.22.253.63:33797 (size: 2.1 KB, free: 530.0 MB)
+19/03/30 21:28:18 INFO storage.BlockManagerInfo: Added broadcast_6_piece0 in memory on 10.22.253.58:44606 (size: 2.1 KB, free: 530.0 MB)
+19/03/30 21:28:18 INFO storage.BlockManagerInfo: Added broadcast_5_piece0 in memory on 10.22.253.63:33797 (size: 2.1 KB, free: 530.0 MB)
+19/03/30 21:28:18 INFO storage.BlockManagerInfo: Added broadcast_0_piece0 in memory on 10.22.253.58:44606 (size: 12.6 KB, free: 530.0 MB)
+19/03/30 21:28:18 INFO storage.BlockManagerInfo: Added broadcast_6_piece0 in memory on 10.22.253.63:33797 (size: 2.1 KB, free: 530.0 MB)
+19/03/30 21:28:18 INFO storage.BlockManagerInfo: Added broadcast_3_piece0 in memory on 10.22.253.63:33797 (size: 2.1 KB, free: 530.0 MB)
+19/03/30 21:28:18 INFO storage.BlockManagerInfo: Added broadcast_4_piece0 in memory on 10.22.253.63:33797 (size: 2.1 KB, free: 530.0 MB)
+19/03/30 21:28:18 INFO storage.BlockManagerInfo: Added broadcast_0_piece0 in memory on 10.22.253.63:33797 (size: 12.6 KB, free: 530.0 MB)
+19/03/30 21:28:19 INFO scheduler.TaskSetManager: Finished task 1.0 in stage 1.0 (TID 3) in 781 ms on 10.22.253.64 (1/2)
+19/03/30 21:28:19 INFO scheduler.TaskSetManager: Finished task 1.0 in stage 6.0 (TID 9) in 814 ms on 10.22.253.64 (1/2)
+19/03/30 21:28:19 INFO scheduler.TaskSetManager: Finished task 0.0 in stage 2.0 (TID 4) in 822 ms on 10.22.253.64 (1/2)
+19/03/30 21:28:19 INFO scheduler.TaskSetManager: Finished task 0.0 in stage 10.0 (TID 12) in 806 ms on 10.22.253.64 (1/2)
+19/03/30 21:28:19 INFO scheduler.TaskSetManager: Finished task 0.0 in stage 4.0 (TID 6) in 825 ms on 10.22.253.64 (1/2)
+19/03/30 21:28:19 INFO scheduler.TaskSetManager: Finished task 0.0 in stage 8.0 (TID 10) in 1439 ms on 10.22.253.58 (1/2)
+19/03/30 21:28:19 INFO scheduler.TaskSetManager: Finished task 0.0 in stage 1.0 (TID 2) in 1503 ms on 10.22.253.58 (2/2)
+19/03/30 21:28:19 INFO scheduler.DAGScheduler: ShuffleMapStage 1 (flatMap at Graph.scala:36) finished in 1.503 s
+19/03/30 21:28:19 INFO scheduler.TaskSchedulerImpl: Removed TaskSet 1.0, whose tasks have all completed, from pool 
+19/03/30 21:28:19 INFO scheduler.DAGScheduler: looking for newly runnable stages
+19/03/30 21:28:19 INFO scheduler.DAGScheduler: running: Set(ShuffleMapStage 2, ShuffleMapStage 6, ShuffleMapStage 10, ShuffleMapStage 4, ShuffleMapStage 8)
+19/03/30 21:28:19 INFO scheduler.DAGScheduler: waiting: Set(ResultStage 12, ShuffleMapStage 9, ShuffleMapStage 5, ShuffleMapStage 3, ShuffleMapStage 7, ShuffleMapStage 11)
+19/03/30 21:28:19 INFO scheduler.DAGScheduler: failed: Set()
+19/03/30 21:28:19 INFO scheduler.DAGScheduler: Missing parents for ResultStage 12: List(ShuffleMapStage 11)
+19/03/30 21:28:19 INFO scheduler.DAGScheduler: Missing parents for ShuffleMapStage 9: List(ShuffleMapStage 7, ShuffleMapStage 8)
+19/03/30 21:28:19 INFO scheduler.DAGScheduler: Missing parents for ShuffleMapStage 5: List(ShuffleMapStage 3, ShuffleMapStage 4)
+19/03/30 21:28:19 INFO scheduler.DAGScheduler: Missing parents for ShuffleMapStage 3: List(ShuffleMapStage 2)
+19/03/30 21:28:19 INFO scheduler.DAGScheduler: Missing parents for ShuffleMapStage 7: List(ShuffleMapStage 5, ShuffleMapStage 6)
+19/03/30 21:28:19 INFO scheduler.DAGScheduler: Missing parents for ShuffleMapStage 11: List(ShuffleMapStage 9, ShuffleMapStage 10)
+19/03/30 21:28:20 INFO scheduler.TaskSetManager: Finished task 1.0 in stage 4.0 (TID 7) in 1520 ms on 10.22.253.63 (2/2)
+19/03/30 21:28:20 INFO scheduler.DAGScheduler: ShuffleMapStage 4 (map at Graph.scala:30) finished in 1.521 s
+19/03/30 21:28:20 INFO scheduler.DAGScheduler: looking for newly runnable stages
+19/03/30 21:28:20 INFO scheduler.TaskSchedulerImpl: Removed TaskSet 4.0, whose tasks have all completed, from pool 
+19/03/30 21:28:20 INFO scheduler.DAGScheduler: running: Set(ShuffleMapStage 2, ShuffleMapStage 6, ShuffleMapStage 10, ShuffleMapStage 8)
+19/03/30 21:28:20 INFO scheduler.DAGScheduler: waiting: Set(ResultStage 12, ShuffleMapStage 9, ShuffleMapStage 5, ShuffleMapStage 3, ShuffleMapStage 7, ShuffleMapStage 11)
+19/03/30 21:28:20 INFO scheduler.DAGScheduler: failed: Set()
+19/03/30 21:28:20 INFO scheduler.DAGScheduler: Missing parents for ResultStage 12: List(ShuffleMapStage 11)
+19/03/30 21:28:20 INFO scheduler.DAGScheduler: Missing parents for ShuffleMapStage 9: List(ShuffleMapStage 7, ShuffleMapStage 8)
+19/03/30 21:28:20 INFO scheduler.DAGScheduler: Missing parents for ShuffleMapStage 5: List(ShuffleMapStage 3)
+19/03/30 21:28:20 INFO scheduler.DAGScheduler: Missing parents for ShuffleMapStage 3: List(ShuffleMapStage 2)
+19/03/30 21:28:20 INFO scheduler.DAGScheduler: Missing parents for ShuffleMapStage 7: List(ShuffleMapStage 5, ShuffleMapStage 6)
+19/03/30 21:28:20 INFO scheduler.DAGScheduler: Missing parents for ShuffleMapStage 11: List(ShuffleMapStage 9, ShuffleMapStage 10)
+19/03/30 21:28:20 INFO scheduler.TaskSetManager: Finished task 0.0 in stage 6.0 (TID 8) in 1518 ms on 10.22.253.63 (2/2)
+19/03/30 21:28:20 INFO scheduler.TaskSchedulerImpl: Removed TaskSet 6.0, whose tasks have all completed, from pool 
+19/03/30 21:28:20 INFO scheduler.DAGScheduler: ShuffleMapStage 6 (map at Graph.scala:30) finished in 1.519 s
+19/03/30 21:28:20 INFO scheduler.DAGScheduler: looking for newly runnable stages
+19/03/30 21:28:20 INFO scheduler.DAGScheduler: running: Set(ShuffleMapStage 2, ShuffleMapStage 10, ShuffleMapStage 8)
+19/03/30 21:28:20 INFO scheduler.TaskSetManager: Finished task 1.0 in stage 8.0 (TID 11) in 1515 ms on 10.22.253.63 (2/2)
+19/03/30 21:28:20 INFO scheduler.DAGScheduler: waiting: Set(ResultStage 12, ShuffleMapStage 9, ShuffleMapStage 5, ShuffleMapStage 3, ShuffleMapStage 7, ShuffleMapStage 11)
+19/03/30 21:28:20 INFO scheduler.DAGScheduler: failed: Set()
+19/03/30 21:28:20 INFO scheduler.TaskSchedulerImpl: Removed TaskSet 8.0, whose tasks have all completed, from pool 
+19/03/30 21:28:20 INFO scheduler.DAGScheduler: Missing parents for ResultStage 12: List(ShuffleMapStage 11)
+19/03/30 21:28:20 INFO scheduler.TaskSetManager: Finished task 1.0 in stage 10.0 (TID 13) in 1511 ms on 10.22.253.63 (2/2)
+19/03/30 21:28:20 INFO scheduler.DAGScheduler: Missing parents for ShuffleMapStage 9: List(ShuffleMapStage 7, ShuffleMapStage 8)
+19/03/30 21:28:20 INFO scheduler.TaskSchedulerImpl: Removed TaskSet 10.0, whose tasks have all completed, from pool 
+19/03/30 21:28:20 INFO scheduler.DAGScheduler: Missing parents for ShuffleMapStage 5: List(ShuffleMapStage 3)
+19/03/30 21:28:20 INFO scheduler.DAGScheduler: Missing parents for ShuffleMapStage 3: List(ShuffleMapStage 2)
+19/03/30 21:28:20 INFO scheduler.DAGScheduler: Missing parents for ShuffleMapStage 7: List(ShuffleMapStage 5)
+19/03/30 21:28:20 INFO scheduler.DAGScheduler: Missing parents for ShuffleMapStage 11: List(ShuffleMapStage 9, ShuffleMapStage 10)
+19/03/30 21:28:20 INFO scheduler.TaskSetManager: Finished task 1.0 in stage 2.0 (TID 5) in 1528 ms on 10.22.253.63 (2/2)
+19/03/30 21:28:20 INFO scheduler.TaskSchedulerImpl: Removed TaskSet 2.0, whose tasks have all completed, from pool 
+19/03/30 21:28:20 INFO scheduler.DAGScheduler: ShuffleMapStage 8 (map at Graph.scala:30) finished in 1.516 s
+19/03/30 21:28:20 INFO scheduler.DAGScheduler: looking for newly runnable stages
+19/03/30 21:28:20 INFO scheduler.DAGScheduler: running: Set(ShuffleMapStage 2, ShuffleMapStage 10)
+19/03/30 21:28:20 INFO scheduler.DAGScheduler: waiting: Set(ResultStage 12, ShuffleMapStage 9, ShuffleMapStage 5, ShuffleMapStage 3, ShuffleMapStage 7, ShuffleMapStage 11)
+19/03/30 21:28:20 INFO scheduler.DAGScheduler: failed: Set()
+19/03/30 21:28:20 INFO scheduler.DAGScheduler: Missing parents for ResultStage 12: List(ShuffleMapStage 11)
+19/03/30 21:28:20 INFO scheduler.DAGScheduler: Missing parents for ShuffleMapStage 9: List(ShuffleMapStage 7)
+19/03/30 21:28:20 INFO scheduler.DAGScheduler: Missing parents for ShuffleMapStage 5: List(ShuffleMapStage 3)
+19/03/30 21:28:20 INFO scheduler.DAGScheduler: Missing parents for ShuffleMapStage 3: List(ShuffleMapStage 2)
+19/03/30 21:28:20 INFO scheduler.DAGScheduler: Missing parents for ShuffleMapStage 7: List(ShuffleMapStage 5)
+19/03/30 21:28:20 INFO scheduler.DAGScheduler: Missing parents for ShuffleMapStage 11: List(ShuffleMapStage 9, ShuffleMapStage 10)
+19/03/30 21:28:20 INFO scheduler.DAGScheduler: ShuffleMapStage 10 (map at Graph.scala:30) finished in 1.513 s
+19/03/30 21:28:20 INFO scheduler.DAGScheduler: looking for newly runnable stages
+19/03/30 21:28:20 INFO scheduler.DAGScheduler: running: Set(ShuffleMapStage 2)
+19/03/30 21:28:20 INFO scheduler.DAGScheduler: waiting: Set(ResultStage 12, ShuffleMapStage 9, ShuffleMapStage 5, ShuffleMapStage 3, ShuffleMapStage 7, ShuffleMapStage 11)
+19/03/30 21:28:20 INFO scheduler.DAGScheduler: failed: Set()
+19/03/30 21:28:20 INFO scheduler.DAGScheduler: Missing parents for ResultStage 12: List(ShuffleMapStage 11)
+19/03/30 21:28:20 INFO scheduler.DAGScheduler: Missing parents for ShuffleMapStage 9: List(ShuffleMapStage 7)
+19/03/30 21:28:20 INFO scheduler.DAGScheduler: Missing parents for ShuffleMapStage 5: List(ShuffleMapStage 3)
+19/03/30 21:28:20 INFO scheduler.DAGScheduler: Missing parents for ShuffleMapStage 3: List(ShuffleMapStage 2)
+19/03/30 21:28:20 INFO scheduler.DAGScheduler: Missing parents for ShuffleMapStage 7: List(ShuffleMapStage 5)
+19/03/30 21:28:20 INFO scheduler.DAGScheduler: Missing parents for ShuffleMapStage 11: List(ShuffleMapStage 9)
+19/03/30 21:28:20 INFO scheduler.DAGScheduler: ShuffleMapStage 2 (map at Graph.scala:30) finished in 1.531 s
+19/03/30 21:28:20 INFO scheduler.DAGScheduler: looking for newly runnable stages
+19/03/30 21:28:20 INFO scheduler.DAGScheduler: running: Set()
+19/03/30 21:28:20 INFO scheduler.DAGScheduler: waiting: Set(ResultStage 12, ShuffleMapStage 9, ShuffleMapStage 5, ShuffleMapStage 3, ShuffleMapStage 7, ShuffleMapStage 11)
+19/03/30 21:28:20 INFO scheduler.DAGScheduler: failed: Set()
+19/03/30 21:28:20 INFO scheduler.DAGScheduler: Missing parents for ResultStage 12: List(ShuffleMapStage 11)
+19/03/30 21:28:20 INFO scheduler.DAGScheduler: Missing parents for ShuffleMapStage 9: List(ShuffleMapStage 7)
+19/03/30 21:28:20 INFO scheduler.DAGScheduler: Missing parents for ShuffleMapStage 5: List(ShuffleMapStage 3)
+19/03/30 21:28:20 INFO scheduler.DAGScheduler: Missing parents for ShuffleMapStage 3: List()
+19/03/30 21:28:20 INFO scheduler.DAGScheduler: Missing parents for ShuffleMapStage 7: List(ShuffleMapStage 5)
+19/03/30 21:28:20 INFO scheduler.DAGScheduler: Missing parents for ShuffleMapStage 11: List(ShuffleMapStage 9)
+19/03/30 21:28:20 INFO scheduler.DAGScheduler: Submitting ShuffleMapStage 3 (MapPartitionsRDD[10] at flatMap at Graph.scala:36), which is now runnable
+19/03/30 21:28:20 INFO storage.MemoryStore: ensureFreeSpace(3616) called with curMem=174096, maxMem=555755765
+19/03/30 21:28:20 INFO storage.MemoryStore: Block broadcast_8 stored as values in memory (estimated size 3.5 KB, free 529.8 MB)
+19/03/30 21:28:20 INFO storage.MemoryStore: ensureFreeSpace(1839) called with curMem=177712, maxMem=555755765
+19/03/30 21:28:20 INFO storage.MemoryStore: Block broadcast_8_piece0 stored as bytes in memory (estimated size 1839.0 B, free 529.8 MB)
+19/03/30 21:28:20 INFO storage.BlockManagerInfo: Added broadcast_8_piece0 in memory on 10.22.253.64:44430 (size: 1839.0 B, free: 530.0 MB)
+19/03/30 21:28:20 INFO spark.SparkContext: Created broadcast 8 from broadcast at DAGScheduler.scala:861
+19/03/30 21:28:20 INFO scheduler.DAGScheduler: Submitting 2 missing tasks from ShuffleMapStage 3 (MapPartitionsRDD[10] at flatMap at Graph.scala:36)
+19/03/30 21:28:20 INFO scheduler.TaskSchedulerImpl: Adding task set 3.0 with 2 tasks
+19/03/30 21:28:20 INFO scheduler.TaskSetManager: Starting task 0.0 in stage 3.0 (TID 14, 10.22.253.63, PROCESS_LOCAL, 2167 bytes)
+19/03/30 21:28:20 INFO scheduler.TaskSetManager: Starting task 1.0 in stage 3.0 (TID 15, 10.22.253.58, PROCESS_LOCAL, 2167 bytes)
+19/03/30 21:28:20 INFO storage.BlockManagerInfo: Added broadcast_8_piece0 in memory on 10.22.253.63:33797 (size: 1839.0 B, free: 530.0 MB)
+19/03/30 21:28:20 INFO storage.BlockManagerInfo: Added broadcast_8_piece0 in memory on 10.22.253.58:44606 (size: 1839.0 B, free: 530.0 MB)
+19/03/30 21:28:20 INFO spark.MapOutputTrackerMasterEndpoint: Asked to send map output locations for shuffle 10 to 10.22.253.58:46087
+19/03/30 21:28:20 INFO spark.MapOutputTrackerMaster: Size of output statuses for shuffle 10 is 161 bytes
+19/03/30 21:28:20 INFO spark.MapOutputTrackerMasterEndpoint: Asked to send map output locations for shuffle 10 to 10.22.253.63:39910
+19/03/30 21:28:20 INFO spark.MapOutputTrackerMasterEndpoint: Asked to send map output locations for shuffle 0 to 10.22.253.58:46087
+19/03/30 21:28:20 INFO spark.MapOutputTrackerMaster: Size of output statuses for shuffle 0 is 160 bytes
+19/03/30 21:28:20 INFO spark.MapOutputTrackerMasterEndpoint: Asked to send map output locations for shuffle 0 to 10.22.253.63:39910
+19/03/30 21:28:21 INFO scheduler.TaskSetManager: Finished task 1.0 in stage 3.0 (TID 15) in 1077 ms on 10.22.253.58 (1/2)
+19/03/30 21:28:21 INFO scheduler.TaskSetManager: Finished task 0.0 in stage 3.0 (TID 14) in 1274 ms on 10.22.253.63 (2/2)
+19/03/30 21:28:21 INFO scheduler.DAGScheduler: ShuffleMapStage 3 (flatMap at Graph.scala:36) finished in 1.274 s
+19/03/30 21:28:21 INFO scheduler.TaskSchedulerImpl: Removed TaskSet 3.0, whose tasks have all completed, from pool 
+19/03/30 21:28:21 INFO scheduler.DAGScheduler: looking for newly runnable stages
+19/03/30 21:28:21 INFO scheduler.DAGScheduler: running: Set()
+19/03/30 21:28:21 INFO scheduler.DAGScheduler: waiting: Set(ResultStage 12, ShuffleMapStage 9, ShuffleMapStage 5, ShuffleMapStage 7, ShuffleMapStage 11)
+19/03/30 21:28:21 INFO scheduler.DAGScheduler: failed: Set()
+19/03/30 21:28:21 INFO scheduler.DAGScheduler: Missing parents for ResultStage 12: List(ShuffleMapStage 11)
+19/03/30 21:28:21 INFO scheduler.DAGScheduler: Missing parents for ShuffleMapStage 9: List(ShuffleMapStage 7)
+19/03/30 21:28:21 INFO scheduler.DAGScheduler: Missing parents for ShuffleMapStage 5: List()
+19/03/30 21:28:21 INFO scheduler.DAGScheduler: Missing parents for ShuffleMapStage 7: List(ShuffleMapStage 5)
+19/03/30 21:28:21 INFO scheduler.DAGScheduler: Missing parents for ShuffleMapStage 11: List(ShuffleMapStage 9)
+19/03/30 21:28:21 INFO scheduler.DAGScheduler: Submitting ShuffleMapStage 5 (MapPartitionsRDD[16] at flatMap at Graph.scala:36), which is now runnable
+19/03/30 21:28:21 INFO storage.MemoryStore: ensureFreeSpace(3616) called with curMem=179551, maxMem=555755765
+19/03/30 21:28:21 INFO storage.MemoryStore: Block broadcast_9 stored as values in memory (estimated size 3.5 KB, free 529.8 MB)
+19/03/30 21:28:21 INFO storage.MemoryStore: ensureFreeSpace(1858) called with curMem=183167, maxMem=555755765
+19/03/30 21:28:21 INFO storage.MemoryStore: Block broadcast_9_piece0 stored as bytes in memory (estimated size 1858.0 B, free 529.8 MB)
+19/03/30 21:28:21 INFO storage.BlockManagerInfo: Added broadcast_9_piece0 in memory on 10.22.253.64:44430 (size: 1858.0 B, free: 530.0 MB)
+19/03/30 21:28:21 INFO spark.SparkContext: Created broadcast 9 from broadcast at DAGScheduler.scala:861
+19/03/30 21:28:21 INFO scheduler.DAGScheduler: Submitting 2 missing tasks from ShuffleMapStage 5 (MapPartitionsRDD[16] at flatMap at Graph.scala:36)
+19/03/30 21:28:21 INFO scheduler.TaskSchedulerImpl: Adding task set 5.0 with 2 tasks
+19/03/30 21:28:21 INFO scheduler.TaskSetManager: Starting task 0.0 in stage 5.0 (TID 16, 10.22.253.58, PROCESS_LOCAL, 2167 bytes)
+19/03/30 21:28:21 INFO scheduler.TaskSetManager: Starting task 1.0 in stage 5.0 (TID 17, 10.22.253.64, PROCESS_LOCAL, 2167 bytes)
+19/03/30 21:28:21 INFO storage.BlockManagerInfo: Added broadcast_9_piece0 in memory on 10.22.253.58:44606 (size: 1858.0 B, free: 530.0 MB)
+19/03/30 21:28:21 INFO storage.BlockManagerInfo: Added broadcast_9_piece0 in memory on 10.22.253.64:33610 (size: 1858.0 B, free: 530.0 MB)
+19/03/30 21:28:21 INFO spark.MapOutputTrackerMasterEndpoint: Asked to send map output locations for shuffle 9 to 10.22.253.58:46087
+19/03/30 21:28:21 INFO spark.MapOutputTrackerMaster: Size of output statuses for shuffle 9 is 161 bytes
+19/03/30 21:28:21 INFO spark.MapOutputTrackerMasterEndpoint: Asked to send map output locations for shuffle 9 to 10.22.253.64:33947
+19/03/30 21:28:21 INFO spark.MapOutputTrackerMasterEndpoint: Asked to send map output locations for shuffle 1 to 10.22.253.58:46087
+19/03/30 21:28:21 INFO spark.MapOutputTrackerMaster: Size of output statuses for shuffle 1 is 160 bytes
+19/03/30 21:28:21 INFO spark.MapOutputTrackerMasterEndpoint: Asked to send map output locations for shuffle 1 to 10.22.253.64:33947
+19/03/30 21:28:22 INFO scheduler.TaskSetManager: Finished task 0.0 in stage 5.0 (TID 16) in 849 ms on 10.22.253.58 (1/2)
+19/03/30 21:28:22 INFO scheduler.TaskSetManager: Finished task 1.0 in stage 5.0 (TID 17) in 1043 ms on 10.22.253.64 (2/2)
+19/03/30 21:28:22 INFO scheduler.DAGScheduler: ShuffleMapStage 5 (flatMap at Graph.scala:36) finished in 1.044 s
+19/03/30 21:28:22 INFO scheduler.TaskSchedulerImpl: Removed TaskSet 5.0, whose tasks have all completed, from pool 
+19/03/30 21:28:22 INFO scheduler.DAGScheduler: looking for newly runnable stages
+19/03/30 21:28:22 INFO scheduler.DAGScheduler: running: Set()
+19/03/30 21:28:22 INFO scheduler.DAGScheduler: waiting: Set(ResultStage 12, ShuffleMapStage 9, ShuffleMapStage 7, ShuffleMapStage 11)
+19/03/30 21:28:22 INFO scheduler.DAGScheduler: failed: Set()
+19/03/30 21:28:22 INFO scheduler.DAGScheduler: Missing parents for ResultStage 12: List(ShuffleMapStage 11)
+19/03/30 21:28:22 INFO scheduler.DAGScheduler: Missing parents for ShuffleMapStage 9: List(ShuffleMapStage 7)
+19/03/30 21:28:22 INFO scheduler.DAGScheduler: Missing parents for ShuffleMapStage 7: List()
+19/03/30 21:28:22 INFO scheduler.DAGScheduler: Missing parents for ShuffleMapStage 11: List(ShuffleMapStage 9)
+19/03/30 21:28:22 INFO scheduler.DAGScheduler: Submitting ShuffleMapStage 7 (MapPartitionsRDD[22] at flatMap at Graph.scala:36), which is now runnable
+19/03/30 21:28:22 INFO storage.MemoryStore: ensureFreeSpace(3616) called with curMem=185025, maxMem=555755765
+19/03/30 21:28:22 INFO storage.MemoryStore: Block broadcast_10 stored as values in memory (estimated size 3.5 KB, free 529.8 MB)
+19/03/30 21:28:22 INFO storage.MemoryStore: ensureFreeSpace(1856) called with curMem=188641, maxMem=555755765
+19/03/30 21:28:22 INFO storage.MemoryStore: Block broadcast_10_piece0 stored as bytes in memory (estimated size 1856.0 B, free 529.8 MB)
+19/03/30 21:28:22 INFO storage.BlockManagerInfo: Added broadcast_10_piece0 in memory on 10.22.253.64:44430 (size: 1856.0 B, free: 530.0 MB)
+19/03/30 21:28:22 INFO spark.SparkContext: Created broadcast 10 from broadcast at DAGScheduler.scala:861
+19/03/30 21:28:22 INFO scheduler.DAGScheduler: Submitting 2 missing tasks from ShuffleMapStage 7 (MapPartitionsRDD[22] at flatMap at Graph.scala:36)
+19/03/30 21:28:22 INFO scheduler.TaskSchedulerImpl: Adding task set 7.0 with 2 tasks
+19/03/30 21:28:22 INFO scheduler.TaskSetManager: Starting task 0.0 in stage 7.0 (TID 18, 10.22.253.58, PROCESS_LOCAL, 2167 bytes)
+19/03/30 21:28:22 INFO scheduler.TaskSetManager: Starting task 1.0 in stage 7.0 (TID 19, 10.22.253.63, PROCESS_LOCAL, 2167 bytes)
+19/03/30 21:28:22 INFO storage.BlockManagerInfo: Added broadcast_10_piece0 in memory on 10.22.253.63:33797 (size: 1856.0 B, free: 530.0 MB)
+19/03/30 21:28:22 INFO storage.BlockManagerInfo: Added broadcast_10_piece0 in memory on 10.22.253.58:44606 (size: 1856.0 B, free: 530.0 MB)
+19/03/30 21:28:22 INFO spark.MapOutputTrackerMasterEndpoint: Asked to send map output locations for shuffle 8 to 10.22.253.63:39910
+19/03/30 21:28:22 INFO spark.MapOutputTrackerMaster: Size of output statuses for shuffle 8 is 161 bytes
+19/03/30 21:28:22 INFO spark.MapOutputTrackerMasterEndpoint: Asked to send map output locations for shuffle 8 to 10.22.253.58:46087
+19/03/30 21:28:22 INFO spark.MapOutputTrackerMasterEndpoint: Asked to send map output locations for shuffle 2 to 10.22.253.58:46087
+19/03/30 21:28:22 INFO spark.MapOutputTrackerMaster: Size of output statuses for shuffle 2 is 160 bytes
+19/03/30 21:28:22 INFO spark.MapOutputTrackerMasterEndpoint: Asked to send map output locations for shuffle 2 to 10.22.253.63:39910
+19/03/30 21:28:23 INFO scheduler.TaskSetManager: Finished task 0.0 in stage 7.0 (TID 18) in 782 ms on 10.22.253.58 (1/2)
+19/03/30 21:28:23 INFO scheduler.TaskSetManager: Finished task 1.0 in stage 7.0 (TID 19) in 846 ms on 10.22.253.63 (2/2)
+19/03/30 21:28:23 INFO scheduler.TaskSchedulerImpl: Removed TaskSet 7.0, whose tasks have all completed, from pool 
+19/03/30 21:28:23 INFO scheduler.DAGScheduler: ShuffleMapStage 7 (flatMap at Graph.scala:36) finished in 0.847 s
+19/03/30 21:28:23 INFO scheduler.DAGScheduler: looking for newly runnable stages
+19/03/30 21:28:23 INFO scheduler.DAGScheduler: running: Set()
+19/03/30 21:28:23 INFO scheduler.DAGScheduler: waiting: Set(ResultStage 12, ShuffleMapStage 9, ShuffleMapStage 11)
+19/03/30 21:28:23 INFO scheduler.DAGScheduler: failed: Set()
+19/03/30 21:28:23 INFO scheduler.DAGScheduler: Missing parents for ResultStage 12: List(ShuffleMapStage 11)
+19/03/30 21:28:23 INFO scheduler.DAGScheduler: Missing parents for ShuffleMapStage 9: List()
+19/03/30 21:28:23 INFO scheduler.DAGScheduler: Missing parents for ShuffleMapStage 11: List(ShuffleMapStage 9)
+19/03/30 21:28:23 INFO scheduler.DAGScheduler: Submitting ShuffleMapStage 9 (MapPartitionsRDD[28] at flatMap at Graph.scala:36), which is now runnable
+19/03/30 21:28:23 INFO storage.MemoryStore: ensureFreeSpace(3616) called with curMem=190497, maxMem=555755765
+19/03/30 21:28:23 INFO storage.MemoryStore: Block broadcast_11 stored as values in memory (estimated size 3.5 KB, free 529.8 MB)
+19/03/30 21:28:23 INFO storage.MemoryStore: ensureFreeSpace(1857) called with curMem=194113, maxMem=555755765
+19/03/30 21:28:23 INFO storage.MemoryStore: Block broadcast_11_piece0 stored as bytes in memory (estimated size 1857.0 B, free 529.8 MB)
+19/03/30 21:28:23 INFO storage.BlockManagerInfo: Added broadcast_11_piece0 in memory on 10.22.253.64:44430 (size: 1857.0 B, free: 530.0 MB)
+19/03/30 21:28:23 INFO spark.SparkContext: Created broadcast 11 from broadcast at DAGScheduler.scala:861
+19/03/30 21:28:23 INFO scheduler.DAGScheduler: Submitting 2 missing tasks from ShuffleMapStage 9 (MapPartitionsRDD[28] at flatMap at Graph.scala:36)
+19/03/30 21:28:23 INFO scheduler.TaskSchedulerImpl: Adding task set 9.0 with 2 tasks
+19/03/30 21:28:23 INFO scheduler.TaskSetManager: Starting task 0.0 in stage 9.0 (TID 20, 10.22.253.58, PROCESS_LOCAL, 2167 bytes)
+19/03/30 21:28:23 INFO scheduler.TaskSetManager: Starting task 1.0 in stage 9.0 (TID 21, 10.22.253.63, PROCESS_LOCAL, 2167 bytes)
+19/03/30 21:28:23 INFO storage.BlockManagerInfo: Added broadcast_11_piece0 in memory on 10.22.253.63:33797 (size: 1857.0 B, free: 530.0 MB)
+19/03/30 21:28:23 INFO storage.BlockManagerInfo: Added broadcast_11_piece0 in memory on 10.22.253.58:44606 (size: 1857.0 B, free: 530.0 MB)
+19/03/30 21:28:23 INFO spark.MapOutputTrackerMasterEndpoint: Asked to send map output locations for shuffle 7 to 10.22.253.63:39910
+19/03/30 21:28:23 INFO spark.MapOutputTrackerMaster: Size of output statuses for shuffle 7 is 161 bytes
+19/03/30 21:28:23 INFO spark.MapOutputTrackerMasterEndpoint: Asked to send map output locations for shuffle 7 to 10.22.253.58:46087
+19/03/30 21:28:23 INFO spark.MapOutputTrackerMasterEndpoint: Asked to send map output locations for shuffle 3 to 10.22.253.58:46087
+19/03/30 21:28:23 INFO spark.MapOutputTrackerMaster: Size of output statuses for shuffle 3 is 161 bytes
+19/03/30 21:28:23 INFO spark.MapOutputTrackerMasterEndpoint: Asked to send map output locations for shuffle 3 to 10.22.253.63:39910
+19/03/30 21:28:23 INFO scheduler.TaskSetManager: Finished task 0.0 in stage 9.0 (TID 20) in 752 ms on 10.22.253.58 (1/2)
+19/03/30 21:28:23 INFO scheduler.TaskSetManager: Finished task 1.0 in stage 9.0 (TID 21) in 786 ms on 10.22.253.63 (2/2)
+19/03/30 21:28:23 INFO scheduler.DAGScheduler: ShuffleMapStage 9 (flatMap at Graph.scala:36) finished in 0.787 s
+19/03/30 21:28:23 INFO scheduler.TaskSchedulerImpl: Removed TaskSet 9.0, whose tasks have all completed, from pool 
+19/03/30 21:28:23 INFO scheduler.DAGScheduler: looking for newly runnable stages
+19/03/30 21:28:23 INFO scheduler.DAGScheduler: running: Set()
+19/03/30 21:28:23 INFO scheduler.DAGScheduler: waiting: Set(ResultStage 12, ShuffleMapStage 11)
+19/03/30 21:28:23 INFO scheduler.DAGScheduler: failed: Set()
+19/03/30 21:28:23 INFO scheduler.DAGScheduler: Missing parents for ResultStage 12: List(ShuffleMapStage 11)
+19/03/30 21:28:23 INFO scheduler.DAGScheduler: Missing parents for ShuffleMapStage 11: List()
+19/03/30 21:28:23 INFO scheduler.DAGScheduler: Submitting ShuffleMapStage 11 (MapPartitionsRDD[34] at map at Graph.scala:42), which is now runnable
+19/03/30 21:28:23 INFO storage.MemoryStore: ensureFreeSpace(3528) called with curMem=195970, maxMem=555755765
+19/03/30 21:28:23 INFO storage.MemoryStore: Block broadcast_12 stored as values in memory (estimated size 3.4 KB, free 529.8 MB)
+19/03/30 21:28:23 INFO storage.MemoryStore: ensureFreeSpace(1844) called with curMem=199498, maxMem=555755765
+19/03/30 21:28:23 INFO storage.MemoryStore: Block broadcast_12_piece0 stored as bytes in memory (estimated size 1844.0 B, free 529.8 MB)
+19/03/30 21:28:23 INFO storage.BlockManagerInfo: Added broadcast_12_piece0 in memory on 10.22.253.64:44430 (size: 1844.0 B, free: 530.0 MB)
+19/03/30 21:28:23 INFO spark.SparkContext: Created broadcast 12 from broadcast at DAGScheduler.scala:861
+19/03/30 21:28:23 INFO scheduler.DAGScheduler: Submitting 2 missing tasks from ShuffleMapStage 11 (MapPartitionsRDD[34] at map at Graph.scala:42)
+19/03/30 21:28:23 INFO scheduler.TaskSchedulerImpl: Adding task set 11.0 with 2 tasks
+19/03/30 21:28:23 INFO scheduler.TaskSetManager: Starting task 0.0 in stage 11.0 (TID 22, 10.22.253.63, PROCESS_LOCAL, 2167 bytes)
+19/03/30 21:28:23 INFO scheduler.TaskSetManager: Starting task 1.0 in stage 11.0 (TID 23, 10.22.253.64, PROCESS_LOCAL, 2167 bytes)
+19/03/30 21:28:24 INFO storage.BlockManagerInfo: Added broadcast_12_piece0 in memory on 10.22.253.63:33797 (size: 1844.0 B, free: 530.0 MB)
+19/03/30 21:28:24 INFO storage.BlockManagerInfo: Added broadcast_12_piece0 in memory on 10.22.253.64:33610 (size: 1844.0 B, free: 530.0 MB)
+19/03/30 21:28:24 INFO spark.MapOutputTrackerMasterEndpoint: Asked to send map output locations for shuffle 6 to 10.22.253.63:39910
+19/03/30 21:28:24 INFO spark.MapOutputTrackerMaster: Size of output statuses for shuffle 6 is 161 bytes
+19/03/30 21:28:24 INFO spark.MapOutputTrackerMasterEndpoint: Asked to send map output locations for shuffle 6 to 10.22.253.64:33947
+19/03/30 21:28:24 INFO spark.MapOutputTrackerMasterEndpoint: Asked to send map output locations for shuffle 4 to 10.22.253.63:39910
+19/03/30 21:28:24 INFO spark.MapOutputTrackerMaster: Size of output statuses for shuffle 4 is 160 bytes
+19/03/30 21:28:24 INFO spark.MapOutputTrackerMasterEndpoint: Asked to send map output locations for shuffle 4 to 10.22.253.64:33947
+19/03/30 21:28:24 INFO scheduler.TaskSetManager: Finished task 1.0 in stage 11.0 (TID 23) in 526 ms on 10.22.253.64 (1/2)
+19/03/30 21:28:24 INFO scheduler.TaskSetManager: Finished task 0.0 in stage 11.0 (TID 22) in 552 ms on 10.22.253.63 (2/2)
+19/03/30 21:28:24 INFO scheduler.DAGScheduler: ShuffleMapStage 11 (map at Graph.scala:42) finished in 0.552 s
+19/03/30 21:28:24 INFO scheduler.TaskSchedulerImpl: Removed TaskSet 11.0, whose tasks have all completed, from pool 
+19/03/30 21:28:24 INFO scheduler.DAGScheduler: looking for newly runnable stages
+19/03/30 21:28:24 INFO scheduler.DAGScheduler: running: Set()
+19/03/30 21:28:24 INFO scheduler.DAGScheduler: waiting: Set(ResultStage 12)
+19/03/30 21:28:24 INFO scheduler.DAGScheduler: failed: Set()
+19/03/30 21:28:24 INFO scheduler.DAGScheduler: Missing parents for ResultStage 12: List()
+19/03/30 21:28:24 INFO scheduler.DAGScheduler: Submitting ResultStage 12 (ShuffledRDD[35] at reduceByKey at Graph.scala:43), which is now runnable
+19/03/30 21:28:24 INFO storage.MemoryStore: ensureFreeSpace(2280) called with curMem=201342, maxMem=555755765
+19/03/30 21:28:24 INFO storage.MemoryStore: Block broadcast_13 stored as values in memory (estimated size 2.2 KB, free 529.8 MB)
+19/03/30 21:28:24 INFO storage.MemoryStore: ensureFreeSpace(1360) called with curMem=203622, maxMem=555755765
+19/03/30 21:28:24 INFO storage.MemoryStore: Block broadcast_13_piece0 stored as bytes in memory (estimated size 1360.0 B, free 529.8 MB)
+19/03/30 21:28:24 INFO storage.BlockManagerInfo: Added broadcast_13_piece0 in memory on 10.22.253.64:44430 (size: 1360.0 B, free: 530.0 MB)
+19/03/30 21:28:24 INFO spark.SparkContext: Created broadcast 13 from broadcast at DAGScheduler.scala:861
+19/03/30 21:28:24 INFO scheduler.DAGScheduler: Submitting 2 missing tasks from ResultStage 12 (ShuffledRDD[35] at reduceByKey at Graph.scala:43)
+19/03/30 21:28:24 INFO scheduler.TaskSchedulerImpl: Adding task set 12.0 with 2 tasks
+19/03/30 21:28:24 INFO scheduler.TaskSetManager: Starting task 0.0 in stage 12.0 (TID 24, 10.22.253.63, PROCESS_LOCAL, 1951 bytes)
+19/03/30 21:28:24 INFO scheduler.TaskSetManager: Starting task 1.0 in stage 12.0 (TID 25, 10.22.253.58, PROCESS_LOCAL, 1951 bytes)
+19/03/30 21:28:24 INFO storage.BlockManagerInfo: Added broadcast_13_piece0 in memory on 10.22.253.63:33797 (size: 1360.0 B, free: 530.0 MB)
+19/03/30 21:28:24 INFO storage.BlockManagerInfo: Added broadcast_13_piece0 in memory on 10.22.253.58:44606 (size: 1360.0 B, free: 530.0 MB)
+19/03/30 21:28:24 INFO storage.BlockManagerInfo: Removed broadcast_6_piece0 on 10.22.253.64:44430 in memory (size: 2.1 KB, free: 530.0 MB)
+19/03/30 21:28:24 INFO storage.BlockManagerInfo: Removed broadcast_6_piece0 on 10.22.253.63:33797 in memory (size: 2.1 KB, free: 530.0 MB)
+19/03/30 21:28:24 INFO storage.BlockManagerInfo: Removed broadcast_6_piece0 on 10.22.253.58:44606 in memory (size: 2.1 KB, free: 530.0 MB)
+19/03/30 21:28:24 INFO spark.MapOutputTrackerMasterEndpoint: Asked to send map output locations for shuffle 5 to 10.22.253.63:39910
+19/03/30 21:28:24 INFO spark.MapOutputTrackerMaster: Size of output statuses for shuffle 5 is 163 bytes
+19/03/30 21:28:24 INFO spark.MapOutputTrackerMasterEndpoint: Asked to send map output locations for shuffle 5 to 10.22.253.58:46087
+19/03/30 21:28:24 INFO storage.BlockManagerInfo: Removed broadcast_11_piece0 on 10.22.253.64:44430 in memory (size: 1857.0 B, free: 530.0 MB)
+19/03/30 21:28:24 INFO scheduler.TaskSetManager: Finished task 0.0 in stage 12.0 (TID 24) in 29 ms on 10.22.253.63 (1/2)
+19/03/30 21:28:24 INFO storage.BlockManagerInfo: Removed broadcast_11_piece0 on 10.22.253.63:33797 in memory (size: 1857.0 B, free: 530.0 MB)
+19/03/30 21:28:24 INFO scheduler.TaskSetManager: Finished task 1.0 in stage 12.0 (TID 25) in 30 ms on 10.22.253.58 (2/2)
+19/03/30 21:28:24 INFO scheduler.DAGScheduler: ResultStage 12 (collect at Graph.scala:44) finished in 0.030 s
+19/03/30 21:28:24 INFO scheduler.TaskSchedulerImpl: Removed TaskSet 12.0, whose tasks have all completed, from pool 
+19/03/30 21:28:24 INFO scheduler.DAGScheduler: Job 1 finished: collect at Graph.scala:44, took 6.136003 s
+19/03/30 21:28:24 INFO storage.BlockManagerInfo: Removed broadcast_11_piece0 on 10.22.253.58:44606 in memory (size: 1857.0 B, free: 530.0 MB)
+19/03/30 21:28:24 INFO storage.BlockManagerInfo: Removed broadcast_10_piece0 on 10.22.253.64:44430 in memory (size: 1856.0 B, free: 530.0 MB)
+19/03/30 21:28:24 INFO storage.BlockManagerInfo: Removed broadcast_10_piece0 on 10.22.253.58:44606 in memory (size: 1856.0 B, free: 530.0 MB)
+19/03/30 21:28:24 INFO storage.BlockManagerInfo: Removed broadcast_10_piece0 on 10.22.253.63:33797 in memory (size: 1856.0 B, free: 530.0 MB)
+(4,46)
+(0,92983)
+(6,12)
+(8,1)
+(10,1)
+(2,752)
+(11,1)
+(1,5847)
+(3,331)
+(7,2)
+(9,2)19/03/30 21:28:24 INFO storage.BlockManagerInfo: Removed broadcast_9_piece0 on 10.22.253.64:44430 in memory (size: 1858.0 B, free: 530.0 MB)
+
+(5,22)
+19/03/30 21:28:24 INFO storage.BlockManagerInfo: Removed broadcast_9_piece0 on 10.22.253.58:44606 in memory (size: 1858.0 B, free: 530.0 MB)
+19/03/30 21:28:24 INFO storage.BlockManagerInfo: Removed broadcast_9_piece0 on 10.22.253.64:33610 in memory (size: 1858.0 B, free: 530.0 MB)
+19/03/30 21:28:24 INFO spark.SparkContext: Invoking stop() from shutdown hook
+19/03/30 21:28:24 INFO storage.BlockManagerInfo: Removed broadcast_8_piece0 on 10.22.253.64:44430 in memory (size: 1839.0 B, free: 530.0 MB)
+19/03/30 21:28:24 INFO storage.BlockManagerInfo: Removed broadcast_8_piece0 on 10.22.253.63:33797 in memory (size: 1839.0 B, free: 530.0 MB)
+19/03/30 21:28:24 INFO storage.BlockManagerInfo: Removed broadcast_8_piece0 on 10.22.253.58:44606 in memory (size: 1839.0 B, free: 530.0 MB)
+19/03/30 21:28:24 INFO storage.BlockManagerInfo: Removed broadcast_7_piece0 on 10.22.253.64:44430 in memory (size: 2.1 KB, free: 530.0 MB)
+19/03/30 21:28:24 INFO storage.BlockManagerInfo: Removed broadcast_7_piece0 on 10.22.253.64:33610 in memory (size: 2.1 KB, free: 530.0 MB)
+19/03/30 21:28:24 INFO storage.BlockManagerInfo: Removed broadcast_7_piece0 on 10.22.253.63:33797 in memory (size: 2.1 KB, free: 530.0 MB)
+19/03/30 21:28:24 INFO storage.BlockManagerInfo: Removed broadcast_5_piece0 on 10.22.253.64:44430 in memory (size: 2.1 KB, free: 530.0 MB)
+19/03/30 21:28:24 INFO storage.BlockManagerInfo: Removed broadcast_5_piece0 on 10.22.253.64:33610 in memory (size: 2.1 KB, free: 530.0 MB)
+19/03/30 21:28:24 INFO storage.BlockManagerInfo: Removed broadcast_5_piece0 on 10.22.253.63:33797 in memory (size: 2.1 KB, free: 530.0 MB)
+19/03/30 21:28:24 INFO storage.BlockManagerInfo: Removed broadcast_4_piece0 on 10.22.253.64:44430 in memory (size: 2.1 KB, free: 530.0 MB)
+19/03/30 21:28:24 INFO storage.BlockManagerInfo: Removed broadcast_4_piece0 on 10.22.253.63:33797 in memory (size: 2.1 KB, free: 530.0 MB)
+19/03/30 21:28:24 INFO storage.BlockManagerInfo: Removed broadcast_4_piece0 on 10.22.253.64:33610 in memory (size: 2.1 KB, free: 530.0 MB)
+19/03/30 21:28:24 INFO storage.BlockManagerInfo: Removed broadcast_3_piece0 on 10.22.253.64:44430 in memory (size: 2.1 KB, free: 530.0 MB)
+19/03/30 21:28:24 INFO storage.BlockManagerInfo: Removed broadcast_3_piece0 on 10.22.253.64:33610 in memory (size: 2.1 KB, free: 530.0 MB)
+19/03/30 21:28:24 INFO storage.BlockManagerInfo: Removed broadcast_3_piece0 on 10.22.253.63:33797 in memory (size: 2.1 KB, free: 530.0 MB)
+19/03/30 21:28:24 INFO storage.BlockManagerInfo: Removed broadcast_2_piece0 on 10.22.253.64:44430 in memory (size: 2.3 KB, free: 530.0 MB)
+19/03/30 21:28:24 INFO storage.BlockManagerInfo: Removed broadcast_2_piece0 on 10.22.253.64:33610 in memory (size: 2.3 KB, free: 530.0 MB)
+19/03/30 21:28:24 INFO storage.BlockManagerInfo: Removed broadcast_2_piece0 on 10.22.253.58:44606 in memory (size: 2.3 KB, free: 530.0 MB)
+19/03/30 21:28:24 INFO storage.BlockManagerInfo: Removed broadcast_1_piece0 on 10.22.253.64:44430 in memory (size: 1936.0 B, free: 530.0 MB)
+19/03/30 21:28:24 INFO storage.BlockManagerInfo: Removed broadcast_1_piece0 on 10.22.253.64:33610 in memory (size: 1936.0 B, free: 530.0 MB)
+19/03/30 21:28:24 INFO spark.ContextCleaner: Cleaned accumulator 1
+19/03/30 21:28:24 INFO handler.ContextHandler: stopped o.s.j.s.ServletContextHandler{/metrics/json,null}
+19/03/30 21:28:24 INFO handler.ContextHandler: stopped o.s.j.s.ServletContextHandler{/stages/stage/kill,null}
+19/03/30 21:28:24 INFO handler.ContextHandler: stopped o.s.j.s.ServletContextHandler{/api,null}
+19/03/30 21:28:24 INFO handler.ContextHandler: stopped o.s.j.s.ServletContextHandler{/,null}
+19/03/30 21:28:24 INFO handler.ContextHandler: stopped o.s.j.s.ServletContextHandler{/static,null}
+19/03/30 21:28:24 INFO handler.ContextHandler: stopped o.s.j.s.ServletContextHandler{/executors/threadDump/json,null}
+19/03/30 21:28:24 INFO handler.ContextHandler: stopped o.s.j.s.ServletContextHandler{/executors/threadDump,null}
+19/03/30 21:28:24 INFO handler.ContextHandler: stopped o.s.j.s.ServletContextHandler{/executors/json,null}
+19/03/30 21:28:24 INFO handler.ContextHandler: stopped o.s.j.s.ServletContextHandler{/executors,null}
+19/03/30 21:28:24 INFO handler.ContextHandler: stopped o.s.j.s.ServletContextHandler{/environment/json,null}
+19/03/30 21:28:24 INFO handler.ContextHandler: stopped o.s.j.s.ServletContextHandler{/environment,null}
+19/03/30 21:28:24 INFO handler.ContextHandler: stopped o.s.j.s.ServletContextHandler{/storage/rdd/json,null}
+19/03/30 21:28:24 INFO handler.ContextHandler: stopped o.s.j.s.ServletContextHandler{/storage/rdd,null}
+19/03/30 21:28:24 INFO handler.ContextHandler: stopped o.s.j.s.ServletContextHandler{/storage/json,null}
+19/03/30 21:28:24 INFO handler.ContextHandler: stopped o.s.j.s.ServletContextHandler{/storage,null}
+19/03/30 21:28:24 INFO handler.ContextHandler: stopped o.s.j.s.ServletContextHandler{/stages/pool/json,null}
+19/03/30 21:28:24 INFO handler.ContextHandler: stopped o.s.j.s.ServletContextHandler{/stages/pool,null}
+19/03/30 21:28:24 INFO handler.ContextHandler: stopped o.s.j.s.ServletContextHandler{/stages/stage/json,null}
+19/03/30 21:28:24 INFO handler.ContextHandler: stopped o.s.j.s.ServletContextHandler{/stages/stage,null}
+19/03/30 21:28:24 INFO handler.ContextHandler: stopped o.s.j.s.ServletContextHandler{/stages/json,null}
+19/03/30 21:28:24 INFO handler.ContextHandler: stopped o.s.j.s.ServletContextHandler{/stages,null}
+19/03/30 21:28:24 INFO handler.ContextHandler: stopped o.s.j.s.ServletContextHandler{/jobs/job/json,null}
+19/03/30 21:28:24 INFO handler.ContextHandler: stopped o.s.j.s.ServletContextHandler{/jobs/job,null}
+19/03/30 21:28:24 INFO handler.ContextHandler: stopped o.s.j.s.ServletContextHandler{/jobs/json,null}
+19/03/30 21:28:24 INFO handler.ContextHandler: stopped o.s.j.s.ServletContextHandler{/jobs,null}
+19/03/30 21:28:24 INFO ui.SparkUI: Stopped Spark web UI at http://10.22.253.64:4040
+19/03/30 21:28:24 INFO scheduler.DAGScheduler: Stopping DAGScheduler
+19/03/30 21:28:24 INFO cluster.SparkDeploySchedulerBackend: Shutting down all executors
+19/03/30 21:28:24 INFO cluster.SparkDeploySchedulerBackend: Asking each executor to shut down
+19/03/30 21:28:24 INFO spark.MapOutputTrackerMasterEndpoint: MapOutputTrackerMasterEndpoint stopped!
+19/03/30 21:28:24 INFO storage.MemoryStore: MemoryStore cleared
+19/03/30 21:28:24 INFO storage.BlockManager: BlockManager stopped
+19/03/30 21:28:24 INFO storage.BlockManagerMaster: BlockManagerMaster stopped
+19/03/30 21:28:24 INFO scheduler.OutputCommitCoordinator$OutputCommitCoordinatorEndpoint: OutputCommitCoordinator stopped!
+19/03/30 21:28:24 INFO spark.SparkContext: Successfully stopped SparkContext
+19/03/30 21:28:24 INFO util.ShutdownHookManager: Shutdown hook called
+19/03/30 21:28:24 INFO util.ShutdownHookManager: Deleting directory /tmp/spark-ccb91107-2273-419e-abb1-2cca45ce386d
+19/03/30 21:28:24 INFO remote.RemoteActorRefProvider$RemotingTerminator: Shutting down remote daemon.
+19/03/30 21:28:24 INFO remote.RemoteActorRefProvider$RemotingTerminator: Remote daemon shut down; proceeding with flushing remote transports.
+19/03/30 21:28:24 INFO remote.RemoteActorRefProvider$RemotingTerminator: Remoting shut down.
+stopping yarn daemons
+stopping resourcemanager
+comet-11-56.ibnet: stopping nodemanager
+comet-11-55.ibnet: stopping nodemanager
+comet-11-61.ibnet: stopping nodemanager
+no proxyserver to stop
+19/03/30 21:28:36 WARN util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+Stopping namenodes on [comet-11-55.ibnet]
+comet-11-55.ibnet: stopping namenode
+comet-11-61.ibnet: stopping datanode
+comet-11-56.ibnet: stopping datanode
+comet-11-55.ibnet: stopping datanode
+Stopping secondary namenodes [comet-11-55.ibnet]
+comet-11-55.ibnet: stopping secondarynamenode
+19/03/30 21:28:54 WARN util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+Copying Hadoop logs back to /home/aravikum/cometcluster/logs...
+`/scratch/aravikum/22248476/logs' -> `/home/aravikum/cometcluster/logs'
+`/scratch/aravikum/22248476/logs/hadoop-aravikum-secondarynamenode-comet-11-55.sdsc.edu.log' -> `/home/aravikum/cometcluster/logs/hadoop-aravikum-secondarynamenode-comet-11-55.sdsc.edu.log'
+`/scratch/aravikum/22248476/logs/userlogs' -> `/home/aravikum/cometcluster/logs/userlogs'
+`/scratch/aravikum/22248476/logs/spark-aravikum-org.apache.spark.deploy.worker.Worker-1-comet-11-55.sdsc.edu.out' -> `/home/aravikum/cometcluster/logs/spark-aravikum-org.apache.spark.deploy.worker.Worker-1-comet-11-55.sdsc.edu.out'
+`/scratch/aravikum/22248476/logs/yarn-aravikum-nodemanager-comet-11-55.sdsc.edu.out' -> `/home/aravikum/cometcluster/logs/yarn-aravikum-nodemanager-comet-11-55.sdsc.edu.out'
+`/scratch/aravikum/22248476/logs/yarn-aravikum-resourcemanager-comet-11-55.log' -> `/home/aravikum/cometcluster/logs/yarn-aravikum-resourcemanager-comet-11-55.log'
+`/scratch/aravikum/22248476/logs/hadoop-aravikum-datanode-comet-11-55.sdsc.edu.log' -> `/home/aravikum/cometcluster/logs/hadoop-aravikum-datanode-comet-11-55.sdsc.edu.log'
+`/scratch/aravikum/22248476/logs/hadoop-aravikum-namenode-comet-11-55.sdsc.edu.log' -> `/home/aravikum/cometcluster/logs/hadoop-aravikum-namenode-comet-11-55.sdsc.edu.log'
+`/scratch/aravikum/22248476/logs/SecurityAuth-aravikum.audit' -> `/home/aravikum/cometcluster/logs/SecurityAuth-aravikum.audit'
+`/scratch/aravikum/22248476/logs/hadoop-aravikum-namenode-comet-11-55.sdsc.edu.out' -> `/home/aravikum/cometcluster/logs/hadoop-aravikum-namenode-comet-11-55.sdsc.edu.out'
+`/scratch/aravikum/22248476/logs/hadoop-aravikum-datanode-comet-11-55.sdsc.edu.out' -> `/home/aravikum/cometcluster/logs/hadoop-aravikum-datanode-comet-11-55.sdsc.edu.out'
+`/scratch/aravikum/22248476/logs/spark-aravikum-org.apache.spark.deploy.master.Master-1-comet-11-55.out' -> `/home/aravikum/cometcluster/logs/spark-aravikum-org.apache.spark.deploy.master.Master-1-comet-11-55.out'
+`/scratch/aravikum/22248476/logs/hadoop-aravikum-secondarynamenode-comet-11-55.sdsc.edu.out' -> `/home/aravikum/cometcluster/logs/hadoop-aravikum-secondarynamenode-comet-11-55.sdsc.edu.out'
+`/scratch/aravikum/22248476/logs/yarn-aravikum-nodemanager-comet-11-55.sdsc.edu.log' -> `/home/aravikum/cometcluster/logs/yarn-aravikum-nodemanager-comet-11-55.sdsc.edu.log'
+`/scratch/aravikum/22248476/logs/yarn-aravikum-resourcemanager-comet-11-55.out' -> `/home/aravikum/cometcluster/logs/yarn-aravikum-resourcemanager-comet-11-55.out'
+removed directory: `/scratch/aravikum/22248476/mapred_scratch/filecache'
+removed directory: `/scratch/aravikum/22248476/mapred_scratch/usercache'
+removed directory: `/scratch/aravikum/22248476/mapred_scratch/nmPrivate'
+removed directory: `/scratch/aravikum/22248476/mapred_scratch'
+removed directory: `/scratch/aravikum/22248476/tmp/dfs/namesecondary'
+removed directory: `/scratch/aravikum/22248476/tmp/dfs'
+removed directory: `/scratch/aravikum/22248476/tmp'
+removed `/scratch/aravikum/22248476/namenode_data/current/fsimage_0000000000000000000'
+removed `/scratch/aravikum/22248476/namenode_data/current/seen_txid'
+removed `/scratch/aravikum/22248476/namenode_data/current/edits_inprogress_0000000000000000001'
+removed `/scratch/aravikum/22248476/namenode_data/current/VERSION'
+removed `/scratch/aravikum/22248476/namenode_data/current/fsimage_0000000000000000000.md5'
+removed directory: `/scratch/aravikum/22248476/namenode_data/current'
+removed directory: `/scratch/aravikum/22248476/namenode_data'
+removed directory: `/scratch/aravikum/22248476/hdfs_data/current/BP-652142400-198.202.116.190-1554006461887/tmp'
+removed `/scratch/aravikum/22248476/hdfs_data/current/BP-652142400-198.202.116.190-1554006461887/dncp_block_verification.log.prev'
+removed directory: `/scratch/aravikum/22248476/hdfs_data/current/BP-652142400-198.202.116.190-1554006461887/current/rbw'
+removed `/scratch/aravikum/22248476/hdfs_data/current/BP-652142400-198.202.116.190-1554006461887/current/VERSION'
+removed `/scratch/aravikum/22248476/hdfs_data/current/BP-652142400-198.202.116.190-1554006461887/current/dfsUsed'
+removed `/scratch/aravikum/22248476/hdfs_data/current/BP-652142400-198.202.116.190-1554006461887/current/finalized/subdir0/subdir0/blk_1073741825_1001.meta'
+removed `/scratch/aravikum/22248476/hdfs_data/current/BP-652142400-198.202.116.190-1554006461887/current/finalized/subdir0/subdir0/blk_1073741825'
+removed directory: `/scratch/aravikum/22248476/hdfs_data/current/BP-652142400-198.202.116.190-1554006461887/current/finalized/subdir0/subdir0'
+removed directory: `/scratch/aravikum/22248476/hdfs_data/current/BP-652142400-198.202.116.190-1554006461887/current/finalized/subdir0'
+removed directory: `/scratch/aravikum/22248476/hdfs_data/current/BP-652142400-198.202.116.190-1554006461887/current/finalized'
+removed directory: `/scratch/aravikum/22248476/hdfs_data/current/BP-652142400-198.202.116.190-1554006461887/current'
+removed `/scratch/aravikum/22248476/hdfs_data/current/BP-652142400-198.202.116.190-1554006461887/dncp_block_verification.log.curr'
+removed directory: `/scratch/aravikum/22248476/hdfs_data/current/BP-652142400-198.202.116.190-1554006461887'
+removed `/scratch/aravikum/22248476/hdfs_data/current/VERSION'
+removed directory: `/scratch/aravikum/22248476/hdfs_data/current'
+removed directory: `/scratch/aravikum/22248476/hdfs_data'
+removed directory: `/scratch/aravikum/22248476/pids'
+removed `/scratch/aravikum/22248476/logs/hadoop-aravikum-secondarynamenode-comet-11-55.sdsc.edu.log'
+removed directory: `/scratch/aravikum/22248476/logs/userlogs'
+removed `/scratch/aravikum/22248476/logs/spark-aravikum-org.apache.spark.deploy.worker.Worker-1-comet-11-55.sdsc.edu.out'
+removed `/scratch/aravikum/22248476/logs/yarn-aravikum-nodemanager-comet-11-55.sdsc.edu.out'
+removed `/scratch/aravikum/22248476/logs/yarn-aravikum-resourcemanager-comet-11-55.log'
+removed `/scratch/aravikum/22248476/logs/hadoop-aravikum-datanode-comet-11-55.sdsc.edu.log'
+removed `/scratch/aravikum/22248476/logs/hadoop-aravikum-namenode-comet-11-55.sdsc.edu.log'
+removed `/scratch/aravikum/22248476/logs/SecurityAuth-aravikum.audit'
+removed `/scratch/aravikum/22248476/logs/hadoop-aravikum-namenode-comet-11-55.sdsc.edu.out'
+removed `/scratch/aravikum/22248476/logs/hadoop-aravikum-datanode-comet-11-55.sdsc.edu.out'
+removed `/scratch/aravikum/22248476/logs/spark-aravikum-org.apache.spark.deploy.master.Master-1-comet-11-55.out'
+removed `/scratch/aravikum/22248476/logs/hadoop-aravikum-secondarynamenode-comet-11-55.sdsc.edu.out'
+removed `/scratch/aravikum/22248476/logs/yarn-aravikum-nodemanager-comet-11-55.sdsc.edu.log'
+removed `/scratch/aravikum/22248476/logs/yarn-aravikum-resourcemanager-comet-11-55.out'
+removed directory: `/scratch/aravikum/22248476/logs'
+removed directory: `/scratch/aravikum/22248476/mapred_scratch/filecache'
+removed directory: `/scratch/aravikum/22248476/mapred_scratch/nmPrivate'
+removed directory: `/scratch/aravikum/22248476/mapred_scratch/usercache'
+removed directory: `/scratch/aravikum/22248476/mapred_scratch'
+removed `/scratch/aravikum/22248476/hdfs_data/current/BP-652142400-198.202.116.190-1554006461887/dncp_block_verification.log.curr'
+removed directory: `/scratch/aravikum/22248476/hdfs_data/current/BP-652142400-198.202.116.190-1554006461887/tmp'
+removed `/scratch/aravikum/22248476/hdfs_data/current/BP-652142400-198.202.116.190-1554006461887/dncp_block_verification.log.prev'
+removed directory: `/scratch/aravikum/22248476/hdfs_data/current/BP-652142400-198.202.116.190-1554006461887/current/rbw'
+removed `/scratch/aravikum/22248476/hdfs_data/current/BP-652142400-198.202.116.190-1554006461887/current/finalized/subdir0/subdir0/blk_1073741825_1001.meta'
+removed `/scratch/aravikum/22248476/hdfs_data/current/BP-652142400-198.202.116.190-1554006461887/current/finalized/subdir0/subdir0/blk_1073741825'
+removed directory: `/scratch/aravikum/22248476/hdfs_data/current/BP-652142400-198.202.116.190-1554006461887/current/finalized/subdir0/subdir0'
+removed directory: `/scratch/aravikum/22248476/hdfs_data/current/BP-652142400-198.202.116.190-1554006461887/current/finalized/subdir0'
+removed directory: `/scratch/aravikum/22248476/hdfs_data/current/BP-652142400-198.202.116.190-1554006461887/current/finalized'
+removed `/scratch/aravikum/22248476/hdfs_data/current/BP-652142400-198.202.116.190-1554006461887/current/VERSION'
+removed `/scratch/aravikum/22248476/hdfs_data/current/BP-652142400-198.202.116.190-1554006461887/current/dfsUsed'
+removed directory: `/scratch/aravikum/22248476/hdfs_data/current/BP-652142400-198.202.116.190-1554006461887/current'
+removed directory: `/scratch/aravikum/22248476/hdfs_data/current/BP-652142400-198.202.116.190-1554006461887'
+removed `/scratch/aravikum/22248476/hdfs_data/current/VERSION'
+removed directory: `/scratch/aravikum/22248476/hdfs_data/current'
+removed directory: `/scratch/aravikum/22248476/hdfs_data'
+removed directory: `/scratch/aravikum/22248476/pids'
+removed `/scratch/aravikum/22248476/logs/hadoop-aravikum-datanode-comet-11-56.sdsc.edu.out'
+removed `/scratch/aravikum/22248476/logs/SecurityAuth-aravikum.audit'
+removed directory: `/scratch/aravikum/22248476/logs/userlogs'
+removed `/scratch/aravikum/22248476/logs/yarn-aravikum-nodemanager-comet-11-56.sdsc.edu.out'
+removed `/scratch/aravikum/22248476/logs/spark-aravikum-org.apache.spark.deploy.worker.Worker-1-comet-11-56.sdsc.edu.out'
+removed `/scratch/aravikum/22248476/logs/yarn-aravikum-nodemanager-comet-11-56.sdsc.edu.log'
+removed `/scratch/aravikum/22248476/logs/hadoop-aravikum-datanode-comet-11-56.sdsc.edu.log'
+removed directory: `/scratch/aravikum/22248476/logs'
+removed directory: `/scratch/aravikum/22248476/mapred_scratch/filecache'
+removed directory: `/scratch/aravikum/22248476/mapred_scratch/nmPrivate'
+removed directory: `/scratch/aravikum/22248476/mapred_scratch/usercache'
+removed directory: `/scratch/aravikum/22248476/mapred_scratch'
+removed `/scratch/aravikum/22248476/hdfs_data/current/BP-652142400-198.202.116.190-1554006461887/dncp_block_verification.log.curr'
+removed `/scratch/aravikum/22248476/hdfs_data/current/BP-652142400-198.202.116.190-1554006461887/current/dfsUsed'
+removed directory: `/scratch/aravikum/22248476/hdfs_data/current/BP-652142400-198.202.116.190-1554006461887/current/rbw'
+removed `/scratch/aravikum/22248476/hdfs_data/current/BP-652142400-198.202.116.190-1554006461887/current/finalized/subdir0/subdir0/blk_1073741825'
+removed `/scratch/aravikum/22248476/hdfs_data/current/BP-652142400-198.202.116.190-1554006461887/current/finalized/subdir0/subdir0/blk_1073741825_1001.meta'
+removed directory: `/scratch/aravikum/22248476/hdfs_data/current/BP-652142400-198.202.116.190-1554006461887/current/finalized/subdir0/subdir0'
+removed directory: `/scratch/aravikum/22248476/hdfs_data/current/BP-652142400-198.202.116.190-1554006461887/current/finalized/subdir0'
+removed directory: `/scratch/aravikum/22248476/hdfs_data/current/BP-652142400-198.202.116.190-1554006461887/current/finalized'
+removed `/scratch/aravikum/22248476/hdfs_data/current/BP-652142400-198.202.116.190-1554006461887/current/VERSION'
+removed directory: `/scratch/aravikum/22248476/hdfs_data/current/BP-652142400-198.202.116.190-1554006461887/current'
+removed directory: `/scratch/aravikum/22248476/hdfs_data/current/BP-652142400-198.202.116.190-1554006461887/tmp'
+removed `/scratch/aravikum/22248476/hdfs_data/current/BP-652142400-198.202.116.190-1554006461887/dncp_block_verification.log.prev'
+removed directory: `/scratch/aravikum/22248476/hdfs_data/current/BP-652142400-198.202.116.190-1554006461887'
+removed `/scratch/aravikum/22248476/hdfs_data/current/VERSION'
+removed directory: `/scratch/aravikum/22248476/hdfs_data/current'
+removed directory: `/scratch/aravikum/22248476/hdfs_data'
+removed directory: `/scratch/aravikum/22248476/pids'
+removed `/scratch/aravikum/22248476/logs/spark-aravikum-org.apache.spark.deploy.worker.Worker-1-comet-11-61.sdsc.edu.out'
+removed `/scratch/aravikum/22248476/logs/yarn-aravikum-nodemanager-comet-11-61.sdsc.edu.out'
+removed directory: `/scratch/aravikum/22248476/logs/userlogs'
+removed `/scratch/aravikum/22248476/logs/hadoop-aravikum-datanode-comet-11-61.sdsc.edu.out'
+removed `/scratch/aravikum/22248476/logs/SecurityAuth-aravikum.audit'
+removed `/scratch/aravikum/22248476/logs/hadoop-aravikum-datanode-comet-11-61.sdsc.edu.log'
+removed `/scratch/aravikum/22248476/logs/yarn-aravikum-nodemanager-comet-11-61.sdsc.edu.log'
+removed directory: `/scratch/aravikum/22248476/logs'
+removed directory: `/tmp/Jetty_comet.11.55_ibnet_50090_secondary____xrhmbt/.active'
+removed directory: `/tmp/Jetty_comet.11.55_ibnet_50090_secondary____xrhmbt/jsp'
+removed directory: `/tmp/Jetty_comet.11.55_ibnet_50090_secondary____xrhmbt'
+removed directory: `/tmp/Jetty_0_0_0_0_50070_hdfs____w2cu08/.active'
+removed directory: `/tmp/Jetty_0_0_0_0_50070_hdfs____w2cu08/jsp'
+removed directory: `/tmp/Jetty_0_0_0_0_50070_hdfs____w2cu08'
+removed directory: `/tmp/Jetty_0_0_0_0_50075_datanode____hwtdwq_7112676312664631897/.active'
+removed directory: `/tmp/Jetty_0_0_0_0_50075_datanode____hwtdwq_7112676312664631897/jsp'
+removed directory: `/tmp/Jetty_0_0_0_0_50075_datanode____hwtdwq_7112676312664631897'
